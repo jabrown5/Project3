@@ -1,0 +1,2 @@
+class RestroomController < ApplicationController
+end
