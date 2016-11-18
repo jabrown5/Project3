@@ -1,0 +1,16 @@
+<h1>Your Comments</h1>
+
+{{message}}
+
+<form ng-submit="createComment(publiclyaccessible, cleanliness, familyfriendly, gender, pictures, comment, usersubmission, date, tags)">
+	<input type="text" ng-model="publiclyaccessible" placeholder="Is This Publicly Accessible?"><br><br>
+	<input type="text" ng-model="cleanliness" placeholder="How Clean Is It?"><br>
+	<input type="text" ng-model="familyfriendly" placeholder="Is This Family Friendly?"><br>
+	<input type="text" ng-model="gender" placeholder="Is This Gender Specific?"><br><br>
+	<input type="text" ng-model="pictures" placeholder="Upload picture?"><br>
+    <input type="text" ng-model="comment" placeholder="Your comments."><br><br>
+    <input type="text" ng-model="usersubmission" placeholder="Name"><br>
+    <input type="text" ng-model="date" placeholder="The date of your visit."><br>
+    <input type="text" ng-model="tags" placeholder="Tags"><br><br>
+    <input type="submit" value="Add Post">
+</form>

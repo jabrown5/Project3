@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="pottyCheck">
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -7,13 +7,16 @@
     <!--GOOGLE PLACES JS FILES / LINKS-->
     <!--https://www.script-tutorials.com/google-places-api-practice/-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+   <!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script> -->
     <!-- - - - - - - -->
 
     <!--USE THE FULL JS FILES FOR DEVELOPMENT-->
     <script src="/javascripts/jquery.js"></script>
     <script src="/javascripts/angular.js"></script>
     <script src="/javascripts/angular-route.js"></script>
+     <script src="/javascripts/angular-route.min.js"></script>
+
+
     <!-- - - - - - - -->
 
     <!--USE THE .MIN.JS FILES FOR 'GO-LIVE'-->
@@ -23,14 +26,24 @@
     <!-- - - - - - - -->
 
     <!--APP AND CONTROLLER FILES BELOW-->
-    <script src="/javascripts/app.js"></script>
 
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/app.PostsCtrl.js"></script>
+    <script src="/javascripts/app.CreatePostCtrl.js"></script>
+    <script src="/javascripts/app.DeletePostCtrl.js"></script>
+    <script src="/javascripts/app.CommentsCtrl.js"></script>
     <!-- - - - - - - -->
 
 
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<header>
+    <ul>
+        <li><a href='/create'>Create your potty post</a></li>
+        <li><a href='/comments'>Make a comment about a potty</a></li>
+    </ul>
+</header>
+
+    <div ng-view></div>
   </body>
 </html>
