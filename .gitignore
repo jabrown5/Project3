@@ -9,7 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-Project3/back-end/db
+/Project3/back-end/db
 # Used by dotenv library to load environment variables.
 # .env
 
