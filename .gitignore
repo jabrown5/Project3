@@ -11,7 +11,7 @@
 /tmp/
 
 
-db
+./back-end/db
 
 
 # Used by dotenv library to load environment variables.
