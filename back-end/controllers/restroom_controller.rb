@@ -2,7 +2,7 @@ class RestroomController < ApplicationController
 
   get '/' do
     Restroom.all.to_json
-
+    p 'hi'
     # @model = Blog.all
     # @model.to_json
   end

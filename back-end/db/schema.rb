@@ -10,6 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+#huiuuuuuu
+
 ActiveRecord::Schema.define(version: 20161117180141) do
 
   create_table "account", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
