@@ -46,4 +46,38 @@ ActiveRecord::Schema.define(version: 20161117214444) do
     t.string "user_submission"
   end
 
+  create_table "account", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password"
+    t.string "password_hash"
+    t.string "api_key"
+    t.string "contributions"
+  end
+
+  create_table "comment", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "comment"
+    t.string "publicly_accessible"
+    t.string "cleanliness"
+    t.string "family_friendly"
+    t.string "gender"
+    t.string "user_submission"
+    t.string "date"
+    t.string "pictures"
+    t.string "tags"
+    t.string "foreign_key"
+  end
+
+  create_table "restroom", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "facility_name"
+    t.string "address"
+    t.string "latitude"
+    t.string "longitude"
+    t.string "publicly_accessible"
+    t.string "cleanliness"
+    t.string "family_friendly"
+    t.string "gender"
+    t.string "user_submission"
+  end
+
 end
