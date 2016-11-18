@@ -57,7 +57,7 @@ class AccountController < ApplicationController
 
 		#binding.pry
 		@model = Account.where(:username => @username).first!
-		if @model.password_hash == BCrypt::Engine.hash_secret(@password, @model.password_salt)
+		if @model.password_hash == BCrypt::Engine.hash_secret(@password, @model.password)
 			@account_message = "Welcome back!"
 			session[:user] = @model
 
