@@ -1,20 +1,16 @@
-<h3>Add a comment about this potty</h3>
+<h1>Your Comments</h1>
 
-<hr>
+{{message}}
 
-<!--<form ng-submit="createPost(title, contents, tags)">-->
-    <!--<input type="text" ng-model="comment"     placeholder="Please add a comment about this bathroom">-->
-    <!--<input type="text" ng-model="cleanliness"  placeholder="Blog contents here">-->
-    <!--<input type="text" ng-model="tags"      placeholder="Add,tags,like,this">-->
-    <!--<input type="submit" value="Add Post">-->
-
-<!--</form>-->
-
-<!--<form method="post">-->
-    <!--<select name="Icecream Flavours">-->
-        <!--<option value="double chocolate">Double Chocolate</option>-->
-        <!--<option value="vanilla">Vanilla</option>-->
-        <!--<option value="strawberry">Strawberry</option>-->
-        <!--<option value="caramel">Caramel</option>-->
-    <!--</select>-->
-<!--</form>-->
+<form ng-submit="createComment(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags)">
+    <input type="text" ng-model="publicly_accessible" placeholder="Is This Publicly Accessible?"><br><br>
+    <input type="text" ng-model="cleanliness" placeholder="How Clean Is It?"><br>
+    <input type="text" ng-model="family_friendly" placeholder="Is This Family Friendly?"><br>
+    <input type="text" ng-model="gender" placeholder="Is This Gender Specific?"><br><br>
+    <input type="text" ng-model="pictures" placeholder="Upload picture?"><br>
+    <input type="text" ng-model="comment" placeholder="Your comments."><br><br>
+    <input type="text" ng-model="user_submission" placeholder="Name"><br>
+    <input type="text" ng-model="date" placeholder="The date of your visit."><br>
+    <input type="text" ng-model="tags" placeholder="Tags"><br><br>
+    <input type="submit" value="Add Post">
+</form>

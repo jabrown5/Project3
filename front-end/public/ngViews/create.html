@@ -1,0 +1,13 @@
+<h1>Your Restroom Post</h1>
+
+{{message}}
+
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender)">
+    <input type="text" ng-model="facility_name" placeholder="Location Name"><br>
+    <input type="text" ng-model="address" placeholder="What's Your Location"><br><br>
+    <input type="text" ng-model="publicly_accessible" placeholder="Is This Publicly Accessible?"><br>
+    <input type="text" ng-model="cleanliness" placeholder="How Clean Is It?"><br>
+    <input type="text" ng-model="family_friendly" placeholder="Is This Family Friendly?"><br>
+    <input type="text" ng-model="gender" placeholder="Is This Gender Specific?"><br><br>
+    <input type="submit" value="Add Post">
+</form>
