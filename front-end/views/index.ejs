@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="potty"> 
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -14,12 +14,13 @@
     <script src="/javascripts/jquery.js"></script>
     <script src="/javascripts/angular.js"></script>
     <script src="/javascripts/angular-route.js"></script>
+    
     <!-- - - - - - - -->
 
     <!--USE THE .MIN.JS FILES FOR 'GO-LIVE'-->
     <!--<script src="/javascripts/jquery.min.js"></script>-->
     <!--<script src="/javascripts/angular.min.js"></script>-->
-    <!--<script src="/javascripts/angular-route.min.js"></script>-->
+    <script src="/javascripts/angular-route.min.js"></script>
     <!-- - - - - - - -->
 
     <!--APP AND CONTROLLER FILES BELOW-->
@@ -30,7 +31,24 @@
 
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+
+
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/login">login</a></li>
+  </ul>
+  <hr>
+</header>
+
+<!-- this is similar to yield/body in erb/hbs -->
+<div ng-view></div>
+
+<footer>
+  <hr>
+  &copy 2016 Potty Check 
+</footer>
+
+</body>
 </html>
