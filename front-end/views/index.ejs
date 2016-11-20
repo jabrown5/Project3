@@ -2,8 +2,8 @@
 <html ng-app="pottyCheck">
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-
+    <link rel="stylesheet" href="/stylesheets/skeleton/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton/css/skeleton.css">
     <!--GOOGLE PLACES JS FILES / LINKS-->
     <!--https://www.script-tutorials.com/google-places-api-practice/-->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -37,12 +37,19 @@
 
   </head>
   <body>
-<header>
-    <ul>
-        <li><a href='/create'>Create your potty post</a></li>
-        <li><a href='/comments'>Make a comment about a potty</a></li>
+<!-- <header>
+        <a class="button button-primary" href='/create'>Create your potty post</a>
+        <a class="button button-primary" href='/comments'>Make a comment about a potty</a>
     </ul>
-</header>
+</header> -->
+<!-- <header>
+  <ul>
+        <a class="button button-primary" href='/create'>Create your potty post</a>
+        <a class="button button-primary" href='/login'>LOGIN</a>
+  </ul>
+  <hr>
+</header> -->
+
 
     <div ng-view></div>
   </body>

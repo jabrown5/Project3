@@ -1,5 +1,5 @@
 angular.module('pottyCheck')
-    .controller('PostsCtrl', function($scope, $http) {
+    .controller('FindCtrl', function($scope, $http) {
 
         $scope.posts = [];
 

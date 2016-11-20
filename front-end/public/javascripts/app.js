@@ -14,10 +14,14 @@ angular.module('pottyCheck', [
         })
 
         $routeProvider
-            // .when('/', {
-            //     templateUrl: 'ngViews/home.html',
-            //     controller: 'PostsCtrl'
-            // })
+            .when('/', {
+                templateUrl: 'ngViews/admin.html',
+                controller: 'AdminCtrl'
+            })
+            .when('/home', {
+                templateUrl: 'ngViews/home.html',
+                controller: 'HomeCtrl'
+            })
             .when('/create', {
                 templateUrl: 'ngViews/create.html',
                 controller: 'CreatePostCtrl'
@@ -25,11 +29,20 @@ angular.module('pottyCheck', [
             .when('/comments', {
                 templateUrl: 'ngViews/comments.html',
                 controller: 'CommentsCtrl'
+            })
+             .when('/register', {
+                templateUrl: 'ngViews/register.html',
+                controller: 'AdminCtrl'
+            })
+            //    .when('/login', {
+            //     templateUrl: 'ngViews/login.html',
+            //     controller: 'AdminCtrl'
+            // })
+              .when('/find', {
+                templateUrl: 'ngViews/find.html',
+                controller: 'FindCtrl'
             });
-            // .when('/admin', {
-            //     templateUrl: 'ngViews/admin.html',
-            //     controller: 'DeletePostCtrl'
-            // });
+          
 
         $routeProvider.otherwise({ redirectTo: '/' });
     }
