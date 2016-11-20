@@ -1,4 +1,4 @@
-/*body {
+body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: blue;
@@ -9,26 +9,27 @@
 
 
 
- /* 
-#nav .nav-home a {
+  
+/*#nav .nav-home a {
     background-position: 0 -68px;
-}
+}*/
 
-#nav .nav-home a {
+/*#nav .nav-home a {
     border-left: none;
     width: 68px;
     height: 68px;
-    /*overflow: hidden;*/
-    /*position: relative;
-    padding: 0;*/
-    /*background: transparent url(/m/content/logo-nav-sprite.png) no-repeat 0 -68px;*/
-}
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    background: transparent url(/m/content/logo-nav-sprite.png) no-repeat 0 -68px;
+}*/
 
-#nav li a {
+/*#nav li a {
     border-left: 1px dashed rgba(255, 255, 255, 0.3);
     display: block;
     line-height: 1;
     padding: 15px 0;
+    color: red;
     color: #fff;
     width: 106px;
     font-family: "adelle-sans", helvetica, sans-serif;
@@ -42,7 +43,7 @@
 
 /*#nav a {
     visibility: visible;
-}*/
+}
 
 /*a {
     color: #249ce0;
@@ -57,4 +58,4 @@
     line-height: 32px;
 }*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map 
