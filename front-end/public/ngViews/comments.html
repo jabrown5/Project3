@@ -1,4 +1,100 @@
-<h1>Your Comments</h1>
+<header>
+    <header role="banner" id="nav-wrap">
+    <div id="nav" class="headroom headroom--top">
+        <ul role="navigation" class="page">
+            <li>
+                <a href="/create">Post a potty</a>
+            </li>
+            <li>
+                <a href="/comments">Potty Comments</a>
+            </li>
+            <!-- <li>
+                <a href="/home">Home</a>
+            </li> -->
+            <li>
+                <a  href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/toilet.jpeg" alt="Potty pic"></a>
+            </li>
+            <li> 
+                <a href="/locate">Find a Potty</a>
+            </li>
+            <li> 
+                <a href="/logout">Log Out</a>
+            </li>
+            <!-- ::after -->
+        </ul>
+    </div>
+</header>
+<h1>Your Comments Form</h1>
+
+
+<div class="container" id="comments">
+<form ng-submit="createComment(publiclyaccessible, cleanliness, familyfriendly, gender, pictures, comment, usersubmission, date, tags)">
+
+        <div class="four columns">
+            <label for="publicaccessibility">Is This Publicly Accessible?</label>
+            <select type="text" ng-model="publiclyaccessible">
+                <option value="Option 1">yes</option>
+                <option value="Option 2">no</option>
+            </select>       
+        </div>
+
+        <div class="four columns">
+            <label for="cleanliness">How Clean Is It?</label>
+            <select type="text" ng-model="cleanliness">
+                <option value="Option 1">a little clean</option>
+                <option value="Option 2">moderately clean</option>
+                <option value="Option 3">very clean</option>
+                <option value="Option 4">dirty</option>
+                <option value="Option 5">very dirty</option>
+            </select>       
+        </div>
+
+        <div class="four columns">
+            <label for="familyfriendly">Is This Family Friendly?</label>
+            <select type="text" ng-model="familyfriendly">
+                <option value="Option 1">yes</option>
+                <option value="Option 2">no</option>
+            </select>       
+        </div>
+    
+        <div class="four columns">
+            <label for="gender">Is This Gender Specific?</label>
+            <select type="text" ng-model="gender">
+                <option value="Option 1">yes</option>
+                <option value="Option 2">no</option>
+            </select>       
+        </div>
+    
+         <div class="four columns">
+            <label for="pictures">Upload picture?</label>
+            <input type="text" ng-model="pictures" placeholder="Upload picture?">
+        </div>
+    
+        <div class="four columns">
+            <label for="comment">Your comments.</label>
+            <input type="text" ng-model="comment" placeholder="Your comments.">
+        </div>
+    
+        <div class="four columns">
+            <label for="usersubmission">Name</label>
+            <input type="text" ng-model="usersubmission" placeholder="Name">
+        </div>
+    
+        <div class="four columns">
+            <label for="date">The date of your visit.</label>
+            <input type="text" ng-model="date" placeholder="The date of your visit.">
+        </div>
+    
+        <div class="four columns">
+            <label for="tags"></label>
+            <input type="text" ng-model="tags" placeholder="tags">
+        </div><br>
+        <input class="button button-primary" type="submit" value="Add Post">
+</form>
+</div>
+
+
+<!-- <h1>Your Comments</h1>
 
 {{message}}
 
@@ -13,4 +109,4 @@
     <input type="text" ng-model="date" placeholder="The date of your visit."><br>
     <input type="text" ng-model="tags" placeholder="Tags"><br><br>
     <input type="submit" value="Add Post">
-</form>
+</form> -->

@@ -1,6 +1,5 @@
 console.log('THE POTTYCHECK PAGE IS LOADED!');
 
-
 angular.module('pottyCheck', [
     'ngRoute'
 ]).config([
@@ -18,6 +17,14 @@ angular.module('pottyCheck', [
             //     templateUrl: 'ngViews/home.html',
             //     controller: 'PostsCtrl'
             // })
+            .when('/register', {
+                templateUrl: 'ngViews/register.html',
+                controller: 'RegisterCtrl'
+            })
+            .when('/login', {
+                templateUrl: 'ngViews/login.html',
+                controller: 'LoginCtrl'
+            })
             .when('/create', {
                 templateUrl: 'ngViews/create.html',
                 controller: 'CreatePostCtrl'
@@ -34,3 +41,20 @@ angular.module('pottyCheck', [
         $routeProvider.otherwise({ redirectTo: '/' });
     }
 ]);
+            .when('/', {
+                templateUrl: 'ngViews/admin.html',
+                controller: 'AdminCtrl'
+            })
+            .when('/home', {
+                templateUrl: 'ngViews/home.html',
+                controller: 'HomeCtrl'
+            })
+
+            //    .when('/login', {
+            //     templateUrl: 'ngViews/login.html',
+            //     controller: 'AdminCtrl'
+            // })
+              .when('/find', {
+                templateUrl: 'ngViews/find.html',
+                controller: 'FindCtrl'
+            });
