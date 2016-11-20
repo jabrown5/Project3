@@ -3,7 +3,8 @@
   <head>
     <title><%= title %></title>
 <!--     <link rel='stylesheet' href='/stylesheets/style.css' />
- -->    <link rel="stylesheet" href="/stylesheets/skeleton/css/style.css">
+ -->    
+    <link rel="stylesheet" href="/stylesheets/skeleton/css/style.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton/css/skeleton.css">
 
     <!--GOOGLE PLACES JS FILES / LINKS-->
@@ -53,6 +54,35 @@
             <li><a href='/comments'>Make a comment about a potty</a></li>
         </ul>
     </header> -->
+
+ <header role="banner" id="nav-wrap">
+    <div id="nav" class="headroom headroom--top">
+        <ul role="navigation" class="page">
+
+            <li>
+                <a href="/create">Post a potty</a>
+            </li>
+            <li>
+                <a href="/comments">Potty Comments</a>
+            </li>
+            <li>
+                <a  href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/toilet.jpeg" alt="Potty pic"></a>
+            </li>
+            <li> 
+                <a href="/locate">Find a Potty</a>
+            </li>
+            <li>
+                <a href="/register">Register</a>
+            </li>
+            <li>
+                <a href="/login">Login</a>
+            </li>
+            <li> 
+                <a href="/logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</header>
 
     <!-- this is similar to yield/body in erb/hbs -->
     <div ng-view></div>

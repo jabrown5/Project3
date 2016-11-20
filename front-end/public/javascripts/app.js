@@ -17,6 +17,10 @@ angular.module('pottyCheck', [
             //     templateUrl: 'ngViews/home.html',
             //     controller: 'PostsCtrl'
             // })
+            .when('/home', {
+                templateUrl: 'ngViews/home.html',
+                controller: 'HomeCtrl'
+            })
             .when('/register', {
                 templateUrl: 'ngViews/register.html',
                 controller: 'RegisterCtrl'
@@ -32,6 +36,10 @@ angular.module('pottyCheck', [
             .when('/comments', {
                 templateUrl: 'ngViews/comments.html',
                 controller: 'CommentsCtrl'
+            })
+            .when('/find', {
+                templateUrl: 'ngViews/find.html',
+                controller: 'FindCtrl'
             });
             // .when('/admin', {
             //     templateUrl: 'ngViews/admin.html',
@@ -41,20 +49,9 @@ angular.module('pottyCheck', [
         $routeProvider.otherwise({ redirectTo: '/' });
     }
 ]);
-            .when('/', {
-                templateUrl: 'ngViews/admin.html',
-                controller: 'AdminCtrl'
-            })
-            .when('/home', {
-                templateUrl: 'ngViews/home.html',
-                controller: 'HomeCtrl'
-            })
 
-            //    .when('/login', {
-            //     templateUrl: 'ngViews/login.html',
+            // .when('/', {
+            //     templateUrl: 'ngViews/admin.html',
             //     controller: 'AdminCtrl'
             // })
-              .when('/find', {
-                templateUrl: 'ngViews/find.html',
-                controller: 'FindCtrl'
-            });
+
