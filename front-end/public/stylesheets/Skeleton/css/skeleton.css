@@ -421,7 +421,7 @@ hr {
     line-height: 1;
     padding: 15px 0;
     color: black;
-    width: 50%;
+    width: 70%;
     font-family: "adelle-sans", helvetica, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -442,6 +442,7 @@ a {
     text-decoration: none;
     -webkit-transition: all 0.25s linear;
     transition: all 0.25s linear;
+    width:220px;
 }
 
 ::selection {
@@ -473,23 +474,19 @@ ul{
 /*
 ADMIN PAGE
 ___________________________________________________*/
+
 #admin-header {
   background-color: #249ce0;
-  height: 150px;
-
+ 
 }
 
 #adminsection {
-  
    background: url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    height: 300px;
- 
-    
-
 }
 
 .row {
@@ -511,8 +508,11 @@ a.button.button-primary {
 
 /*COMMENTS
 -------------------------------------------------*/
-div.container #comments {
+div#comments.container {
   width: 75%;
+  margin-top:20px;
+  border-top-width: 10px;
+  border: black;
 }
 
 

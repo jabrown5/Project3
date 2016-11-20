@@ -18,35 +18,35 @@ class ApplicationController < Sinatra::Base
 		:database => 'pottyproject'
 	)
 
-<<<<<<< HEAD
-	require 'sinatra'
-  	require 'sinatra/cross_origin'
+# <<<<<<< HEAD
+# 	require 'sinatra'
+#   	require 'sinatra/cross_origin'
 
-  	set :allow_origin, :any
-  set :allow_methods, [:get, :post, :patch, :delete]
+#   	set :allow_origin, :any
+#   set :allow_methods, [:get, :post, :patch, :delete]
 
-  options "*" do
-    response.headers["Allow"] = "HEAD,GET,PUT,POST,DELETE,OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "X-Requested-With, X-HTTP-Method-Override, Content-Type, Cache-Control, Accept"
-    200
-  end
+#   options "*" do
+#     response.headers["Allow"] = "HEAD,GET,PUT,POST,DELETE,OPTIONS"
+#     response.headers["Access-Control-Allow-Headers"] = "X-Requested-With, X-HTTP-Method-Override, Content-Type, Cache-Control, Accept"
+#     200
+#   end
 
-  configure do
-    enable :cross_origin
-  end
+#   configure do
+#     enable :cross_origin
+#   end
 
-  get '/' do
-    {:message => 'Home page not designed yet. Whoops.'}.to_json
-  end
+#   get '/' do
+#     {:message => 'Home page not designed yet. Whoops.'}.to_json
+#   end
 
-	# set :public_folder, File.expand_path('../../public', __FILE__)
-	# set :views, File.expand_path('../../views', __FILE__)
-	# enable :sessions
+# 	# set :public_folder, File.expand_path('../../public', __FILE__)
+# 	# set :views, File.expand_path('../../views', __FILE__)
+# 	# enable :sessions
 
-	# not_found do
-	# 	erb :not_found	#404 page
-	# end
-=======
+# 	# not_found do
+# 	# 	erb :not_found	#404 page
+# 	# end
+# =======
   # NEW - - - - - -
 	require 'sinatra'
 	require 'sinatra/cross_origin'
@@ -74,7 +74,6 @@ class ApplicationController < Sinatra::Base
 		{:message => "not found"}.to_json
 
 	end
->>>>>>> master
 
 	# ENABLING THIS TEMPORARILY TO MAKE SURE THINGS ARE WORKING
 	def does_user_exist?(username)
