@@ -11,6 +11,7 @@ class Comment < ActiveRecord::Migration[5.0]
       table.string :pictures
       table.string :tags
       table.string :foreign_key
+      table.timestamps 
     end
   end
 end
