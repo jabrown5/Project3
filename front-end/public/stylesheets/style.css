@@ -1,60 +1,119 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: blue;
-  }*/
+/*Nav Bar
+-----------------------------------------------------------*/
 
-/*a {
-  color: #00B7FF; }*/
-
-
-
- /* 
 #nav .nav-home a {
-    background-position: 0 -68px;
+   /* background-position: 0 -68px;*/
+    background: #249ce0;
+    width:100%;
+    
 }
 
-#nav .nav-home a {
+#nav .page .nav-home a {
+  background: #249ce0;
     border-left: none;
     width: 68px;
     height: 68px;
-    /*overflow: hidden;*/
-    /*position: relative;
-    padding: 0;*/
-    /*background: transparent url(/m/content/logo-nav-sprite.png) no-repeat 0 -68px;*/
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;
+
 }
 
-#nav li a {
-    border-left: 1px dashed rgba(255, 255, 255, 0.3);
+#nav .page li a {
+    /*border-left: 1px dashed rgba(255, 255, 255, 0.3);*/
+    background: #249ce0;
     display: block;
     line-height: 1;
     padding: 15px 0;
-    color: #fff;
-    width: 106px;
+    color: black;
+    width: 50%;
     font-family: "adelle-sans", helvetica, sans-serif;
     font-weight: 600;
     font-style: normal;
     text-align: center;
-    font-size: 60px;
+    font-size: 20px;
     text-transform: none;
     letter-spacing: 0;
+    margin:0;
+    
 }
 
-/*#nav a {
+#nav a {
     visibility: visible;
-}*/
+}
 
-/*a {
+a {
     color: #249ce0;
     text-decoration: none;
     -webkit-transition: all 0.25s linear;
     transition: all 0.25s linear;
-}*/
+}
 
-/* {
-    margin: 0;
-    padding: 0;
-    line-height: 32px;
-}*/
+::selection {
+    background: #ffcb5f;
+    color: #000;
+    text-shadow: none;
+}
 
-/*# sourceMappingURL=style.css.map */
+li {
+	list-style-type: none;
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+
+
+}
+
+ul{
+	background: #249ce0;
+	display: block;
+	/*list-style-type: disc;*/
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+/*
+ADMIN PAGE
+___________________________________________________*/
+#admin-header {
+	background-color: #249ce0;
+	height: 150px;
+
+}
+
+#adminsection {
+	background: url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+}
+
+.row {
+	height: 60px;
+	position: fixed;
+}
+
+.button{
+  padding-top: 5px;
+}
+a.button.button-primary {
+	margin-top: 10px;
+	background-color: white;
+	color: black;
+	margin-left: 250px;
+	width: 200px;
+}
+
+/*COMMENTS
+-------------------------------------------------*/
+div.container.comments {
+	width: 75%;
+	background-color: gray;
+}
+
