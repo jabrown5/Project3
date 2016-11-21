@@ -15,6 +15,7 @@ angular.module('pottyCheck')
                     cleanliness: cleanliness, 
                     family_friendly: family_friendly, 
                     gender: gender, 
+                    comment, comment,
                     pictures: pictures, 
                     user_submission: user_submission, 
                     date: date, 
