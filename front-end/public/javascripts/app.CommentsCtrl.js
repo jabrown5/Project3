@@ -6,13 +6,22 @@ angular.module('pottyCheck')
         ];
         $scope.message = $scope.messages[0];
 
-        $scope.createComment = function(publiclyaccessible, cleanliness, familyfriendly, gender, pictures, comment, usersubmission, date, tags) {
+        $scope.createComment = function(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags) {
             $http({
                 url: 'http://localhost:9292/api/comment',
                 method: 'POST',
-                params: {publiclyaccessible: publiclyaccessible, cleanliness: cleanliness, familyfriendly: familyfriendly, gender: gender, pictures: pictures, usersubmission: usersubmission, date: date, tags: tags}
+                params: {
+                    publicly_accessible: publicly_accessible, 
+                    cleanliness: cleanliness, 
+                    family_friendly: family_friendly, 
+                    gender: gender, 
+                    comment, comment,
+                    pictures: pictures, 
+                    user_submission: user_submission, 
+                    date: date, 
+                    tags: tags}
             }).success(function (results) {
-                $scope.message = scope.message[1];
+                $scope.message = $scope.message[1];
             }).error(function (err) {
                 console.log('ajax use go down hole--ERROR');
                 console.log(err);

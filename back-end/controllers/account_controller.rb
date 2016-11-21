@@ -3,11 +3,13 @@ class AccountController < ApplicationController
 	@username = ''
 
 	get '/' do
+		Account.all.to_json
+
 		# login/registration page
 		# erb :login
 	end
 
-	post '/register' do
+	post '/' do
 		# accept the params from a post
 		# to create a user
 		# hint: bcrypt
@@ -39,10 +41,15 @@ class AccountController < ApplicationController
 		#binding.pry
 
 		# erb :login_notice
+   
+   		@model.to_json
 
 	end
 
-	post '/login' do
+
+	# post '/' do
+	get '/' do
+
 		# params { :username, :password, :email }
 		@username = params[:username]
 		@password = params[:password]
@@ -69,6 +76,9 @@ class AccountController < ApplicationController
 			@account_message = "Sorry, you password did not match. Try again?"
 			# return erb :login_notice
 		end
+
+   		@model.to_json
+
 
 	end
 

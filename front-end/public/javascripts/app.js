@@ -1,6 +1,5 @@
 console.log('THE POTTYCHECK PAGE IS LOADED!');
 
-
 angular.module('pottyCheck', [
     'ngRoute'
 ]).config([
@@ -16,11 +15,19 @@ angular.module('pottyCheck', [
         $routeProvider
             .when('/', {
                 templateUrl: 'ngViews/admin.html',
-                controller: 'AdminCtrl'
+                controller: 'PostsCtrl'
             })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
                 controller: 'HomeCtrl'
+            })
+            .when('/register', {
+                templateUrl: 'ngViews/register.html',
+                controller: 'RegisterCtrl'
+            })
+            .when('/login', {
+                templateUrl: 'ngViews/login.html',
+                controller: 'LoginCtrl'
             })
             .when('/create', {
                 templateUrl: 'ngViews/create.html',
@@ -30,20 +37,17 @@ angular.module('pottyCheck', [
                 templateUrl: 'ngViews/comments.html',
                 controller: 'CommentsCtrl'
             })
-             .when('/register', {
-                templateUrl: 'ngViews/register.html',
-                controller: 'AdminCtrl'
-            })
-            //    .when('/login', {
-            //     templateUrl: 'ngViews/login.html',
-            //     controller: 'AdminCtrl'
-            // })
-              .when('/find', {
+            .when('/find', {
                 templateUrl: 'ngViews/find.html',
                 controller: 'FindCtrl'
             });
-          
+            // .when('/admin', {
+            //     templateUrl: 'ngViews/admin.html',
+            //     controller: 'DeletePostCtrl'
+            // });
 
         $routeProvider.otherwise({ redirectTo: '/' });
     }
 ]);
+
+          

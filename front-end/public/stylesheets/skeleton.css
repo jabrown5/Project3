@@ -208,7 +208,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+  border-color: #33C3F0;
+width: 300px;}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -394,127 +395,6 @@ hr {
 
 /*Nav Bar
 -----------------------------------------------------------*/
-
-#nav .nav-home a {
-   /* background-position: 0 -68px;*/
-    background: #249ce0;
-    width:100%;
-    
-}
-
-#nav .page .nav-home a {
-  background: #249ce0;
-    border-left: none;
-    width: 68px;
-    height: 68px;
-    overflow: hidden;
-    position: relative;
-    padding: 0;
-    background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;
-
-}
-
-#nav .page li a {
-    /*border-left: 1px dashed rgba(255, 255, 255, 0.3);*/
-    background: #249ce0;
-    display: block;
-    line-height: 1;
-    padding: 15px 0;
-    color: black;
-    width: 70%;
-    font-family: "adelle-sans", helvetica, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 20px;
-    text-transform: none;
-    letter-spacing: 0;
-    margin:0;
-    
-}
-
-#nav a {
-    visibility: visible;
-}
-
-a {
-    color: #249ce0;
-    text-decoration: none;
-    -webkit-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-    width:220px;
-}
-
-::selection {
-    background: #ffcb5f;
-    color: #000;
-    text-shadow: none;
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-    width: 18%;
-    text-align: center;
-
-
-}
-
-ul{
-  background: #249ce0;
-    display: block;
-    /*list-style-type: disc;*/
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-
-/*
-ADMIN PAGE
-___________________________________________________*/
-
-#admin-header {
-  background-color: #249ce0;
- 
-}
-
-#adminsection {
-   background: url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   height: 300px;
-}
-
-.row {
-
-  height: 60px;
-  position: fixed;
-}
-
-.button{
-  padding-top: 5px;
-}
-a.button.button-primary {
-  margin-top: 10px;
- background-color: white;
-  color: black;
-  margin-left: 250px;
-  width: 200px;
-}
-
-/*COMMENTS
--------------------------------------------------*/
-div#comments.container {
-  width: 75%;
-  margin-top:20px;
-  border-top-width: 10px;
-  border: black;
-}
-
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– 

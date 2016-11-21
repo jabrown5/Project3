@@ -1,6 +1,6 @@
 class Comment < ActiveRecord::Migration[5.0] 
   def change 
-  create_table :comment do |table|  
+  create_table :comments do |table|  
   table.string :publicly_accessible 
   table.string :cleanliness 
   table.string :family_friendly 
@@ -9,8 +9,9 @@ class Comment < ActiveRecord::Migration[5.0]
   table.string :date 
   table.string :pictures 
   table.string :tags 
-  table.string :comment 
-  table.string :foreign_key 
+  table.string :tags
+  table.integer :restroom_id, foreign_key: :restroom#, :null => false
+  table.timestamps 
   end 
 end 
 end
