@@ -6,7 +6,7 @@ angular.module('pottyCheck')
         ];
         $scope.message = $scope.messages[0];
 
-        $scope.createComment = function(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags) {
+        $scope.createComment = function(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags, restroom_id) {
             $http({
                 url: 'http://localhost:9292/api/comment',
                 method: 'POST',
@@ -19,7 +19,8 @@ angular.module('pottyCheck')
                     pictures: pictures, 
                     user_submission: user_submission, 
                     date: date, 
-                    tags: tags}
+                    tags: tags,
+                    restroom_id: restroom_id}
             }).success(function (results) {
                 $scope.message = $scope.message[1];
             }).error(function (err) {

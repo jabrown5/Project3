@@ -18,17 +18,16 @@ class CommentController < ApplicationController
   post '/' do
     @model = Comment.new
     @model.comment  = params[:comment]
-
     @model.publicly_accessible = params[:publicly_accessible]
     @model.cleanliness      = params[:cleanliness]
     @model.family_friendly  = params[:family_friendly]
     @model.gender           = params[:gender]
     @model.user_submission  = params[:user_submission]
-
     @model.date  = params[:date]
     @model.pictures  = params[:pictures]
     @model.tags  = params[:tags]
-    @model.foreign_key  = params[:foreign_key]
+    # @model.foreign_key  = params[:foreign_key]
+    @model.restroom_id = params[:restroom_id]
 
     @model.save
     @model.to_json
@@ -47,7 +46,8 @@ class CommentController < ApplicationController
     @date       = params[:date]
     @pictures   = params[:pictures]
     @tags       = params[:tags]
-    @foreign_key= params[:foreign_key]
+    # @foreign_key= params[:foreign_key]
+    @restroom_id= params[:restroom_id]
 
     @new_row = Comment.find(@id)
     @new_row.comment  = @comment
@@ -59,7 +59,8 @@ class CommentController < ApplicationController
     @new_row.date      = @date
     @new_row.pictures  = @pictures
     @new_row.tags         = @tabs
-    @new_row.foreign_key  = @foreign_key
+    # @new_row.foreign_key  = @foreign_key
+    @new_row.restroom_id  = @restroom_id
 
     @new_row.save
     @new_row.to_json

@@ -1,18 +1,19 @@
 class RestroomController < ApplicationController
 
   get '/' do
+    # binding.pry
     Restroom.all.to_json
-    # p 'hi'
-    # @model = Blog.all
-    # @model.to_json
   end
 
   get '/:id' do
     @id = params[:id]
     Restroom.find(@id).to_json
+  end
 
-    # @model = Blog.find(params[:id])
-    # @model.to_json
+  # RENDERS ALL COMMENTS ASSOCIATED W/ A RESTROOM THAT HAS BEEN CALLED BY ID
+  get '/:id/comments' do
+    @res = Restroom.find(params[:id]).comments
+    @res.to_json
   end
 
   post '/' do
@@ -65,6 +66,5 @@ class RestroomController < ApplicationController
     @model.destroy
     "You've deleted this potty posting."
   end
-
 
 end
