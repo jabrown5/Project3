@@ -1,34 +1,20 @@
-<!--  <header>
-  	<header role="banner" id="nav-wrap">
-	<div id="nav" class="headroom headroom-top">
-		<ul role="navigation" class="page">
-			<li>
-				<a href="/create">Post a potty</a>
-			</li>
-			<li>
-				<a href="/comments">Potty Comments</a>
-			</li>
-			<li>
-				<a href="/home">Home</a>
-			</li>
-			<li>
-				<a  href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/toilet.jpeg" alt="Potty pic"></a>
-			</li>
-			<li> 
-				<a href="/locate">Find a Potty</a>
-			</li>
-			<li> 
-				<a href="/logout">Log Out</a>
-			</li>
-			<::after -->
-		<!-- </ul>
-	</div>
-</header> --> 
+ <h3>Please Register for a Potty Check Account</h3>
 
- <h1>Please Register for a Potty Check Account</h1>
+<div id="registerbody">
+<style type="text/css">
+    .container {
+        width: 900px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+</style>
 
-
-<form ng-submit="createAccount(username, email, password)">
+<div class="container" id="comments">
+<div>
+<form style="background-color: white; margin-top: 50px; padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 40px; height: 150px;" ng-submit="createAccount(username, email, password)">
 
 	<div class="row">
 
@@ -43,15 +29,17 @@
 		 	<input class="u-full-width" type="text" ng-model="email" placeholder="Email">
  		</div>
 
- 		<div class="four columns">
+ 		<div style="padding-bottom: 10px;" class="four columns">
 		 	<label for="password">Password</label>
 		 	<input class="u-full-width" type="text" ng-model="password" placeholder="password" required>
  		</div>
 
-    <input type="text" ng-model="password_hash" placeholder="password"><br> <!-- is this hidden? -->
-    <!-- <input class="button button-primary" type="submit" value="Sign Up">
+    <input type="hidden" ng-model="password_hash" placeholder="password"><br> <!-- is this hidden? -->
+    <input style="margin-left: 250px;"  class="button button-primary" type="submit" value="Sign Up">
     </div>
-</form>  -->
+</form> 
+</div>
+</div>
 
 
 <!-- 
