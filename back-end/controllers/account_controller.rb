@@ -64,14 +64,33 @@ class AccountController < ApplicationController
 		# to check if a user exists
 		# and if so, log them in
 		if does_user_exist?(@username) == false
-			@account_message = "User already exists."
+			@account_message = "User does not exist. Please try again or register a new account."
+				return {:message => @account_message}.to_json
+
 			#binding.pry
 			# return erb :login_notice
+
+		else
+
+	        @model = Account.where(:username => @username).first
+	        @password = BCrypt::Engine.hash_secret(params[:password], @model.password_hash)
+	       
+	        if @password == @model.password_hash
+				@account_message = "Welcome back!"
+				session[:user] = @model
+				return {:message => @account_message, :key => 'catscatscatscats'}.to_json
+			# if @model.password_hash == BCrypt::Engine.hash_secret(@password, @model.password_salt)
+			else
+				@account_message = "Sorry, you password did not match. Try again?"
+				return {:message => @account_message}.to_json
+			end
+        
+
 		end
 
-		session[:user] = @username
-		p session
-		{ :message => 'New session enabled.'}.to_json
+		# session[:user] = @username
+		# p session
+		# { :message => 'New session enabled.'}.to_json
 
 
 		# #binding.pry
