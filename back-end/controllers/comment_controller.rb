@@ -1,6 +1,7 @@
 class CommentController < ApplicationController
 
   get '/' do
+    p session
     Comment.all.to_json
 
     # @model = Blog.all

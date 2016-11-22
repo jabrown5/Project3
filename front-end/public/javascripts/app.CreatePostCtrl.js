@@ -6,7 +6,7 @@ angular.module('pottyCheck')
         ];
         $scope.message = $scope.messages[0];
 
-        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender) {
+        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude) {
             $http({
                 url: 'http://localhost:9292/api/restroom/',
                 method: 'POST',
@@ -16,7 +16,9 @@ angular.module('pottyCheck')
                     publicly_accessible: publicly_accessible, 
                     cleanliness: cleanliness, 
                     family_friendly: family_friendly, 
-                    gender: gender}
+                    gender: gender,
+                    latitude, latitude,
+                    longitude, longitude}
             }).success(function (results) {
                 $scope.message = $scope.message[1];
             }).error(function (err) {

@@ -2,6 +2,7 @@ class RestroomController < ApplicationController
 
   get '/' do
     # binding.pry
+    p session
     Restroom.all.to_json
   end
 

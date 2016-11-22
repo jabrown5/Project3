@@ -8,17 +8,24 @@ angular.module('pottyCheck')
 
         $scope.loginAccount = function(username, email, password) {
             $http({
-                url: 'http://localhost:9292/api/account/',
-                method: 'get',
+                url: 'http://localhost:9292/api/account/login',
+                method: 'post',
                 params: {
                     username: username, 
                     password: password }
             }).success(function (results) {
-                $scope.message = $scope.message[1];
+                $scope.message = $scope.messages[1];
                 console.log('You have logged in.')
+
+                // need to get session info and plug it in here
+                console.log(results)
+
+
+
             }).error(function (err) {
                 console.log('ERROR -- ERROR -- failed to login user.');
                 console.log(err);
+                $state.go('login')
             });
         };
     });
