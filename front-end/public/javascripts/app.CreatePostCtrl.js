@@ -1,12 +1,7 @@
 angular.module('pottyCheck')
     .controller('CreatePostCtrl', function ($scope, $http, $rootScope) {
-        $scope.messages = [
-            'please fill out all fields',
-            'thanks for your post. view the blog to see it live'
-        ];
-        $scope.message = $scope.messages[0];
 
-        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude) {
+        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key) {
 
             var api_key = $rootScope.api_key;
             $http({
@@ -24,7 +19,9 @@ angular.module('pottyCheck')
                     api_key: api_key
                 }
             }).success(function (results) {
-                $scope.message = $scope.message[1];
+                $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
+                console.log($scope.message)
+
             }).error(function (err) {
                 console.log('ajax use go down hole--ERROR');
                 console.log(err);

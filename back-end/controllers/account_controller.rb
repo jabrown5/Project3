@@ -50,12 +50,10 @@ class AccountController < ApplicationController
 
 			@account_message = "Welcome. You've successfully registered and are now logged in."
 			# @username = session[:user][:username]
-			#binding.pry
+			return {:message => @account_message, :api_key => 'catscatscatscats' }.to_json
 
-			# erb :login_notice
    			return @model.to_json
 		end
-
 
 	end
 
@@ -74,24 +72,20 @@ class AccountController < ApplicationController
 		if does_user_exist?(@username) == false
 			@account_message = "No user with that user name exists. Please try again or register a new account."
 				return {:message => @account_message, :status => 403}.to_json
-
 			#binding.pry
 			# return erb :login_notice
-
 		else
-
 	        @model = Account.where(:username => @username).first
 	        @password = BCrypt::Engine.hash_secret(params[:password], @model.password_hash)
 	       
 	        if @password == @model.password_hash
 				@account_message = "Welcome back!"
-				return {:message => @account_message, :key => 'catscatscatscats' }.to_json
+				return {:message => @account_message, :api_key => 'catscatscatscats' }.to_json
 				# return {:message => @account_message }.to_json
 
 		        # UPON SUCCESSFUL LOGIN, SENDING USER INFO TO CLIENT SIDE
 		        # @model.to_json
 		        # - - - - - - - - - - - - - - - - - - - - - - - -
-
 			else
 				@account_message = "Your password is incorrect. Please try again."
 				# return @model.to_json
@@ -134,6 +128,10 @@ class AccountController < ApplicationController
 		session[:user] = nil
 		# @username = nil
 		redirect '/'
+
+		@account_message = "You've been logged out."
+		# return @model.to_json
+		return {:message => @account_message, :status => 403, :api_key => '' }.to_json
 	end
 
 end
