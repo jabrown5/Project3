@@ -4,7 +4,7 @@
 
 
 <!--  <header role="banner" id="nav-wrap">
-	<div id="nav" class="headroom headroom--top">
+	<div id="nav" class="headroom headroom-top">
 		<ul role="navigation" class="page">
 			<li>
 				<a href="/create">Post a potty</a>
@@ -35,9 +35,19 @@
 			</li> -->
 
 
-<body>
+<!-- <body>
  
   <h1>this is the home page</h1>
   
+</body> -->
 
-</body>
+<!-- TEST CODE: -->
+
+      <p>{{message}}</p>
+<ul>
+    <li ng-repeat="potty in posts">
+        <p><em>{{potty.facility_name}}</em></p>
+        <p>{{potty.address}}</p>
+    </li>
+</ul>
+

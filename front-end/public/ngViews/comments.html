@@ -2,7 +2,10 @@
 
 
 <div class="container" id="comments">
-<form ng-submit="createComment(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags)">
+
+      <p>{{message}}</p>
+
+<form ng-submit="createComment(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags, restroom_id)">
 
         <div class="four columns">
             <label for="publicaccessibility">Is This Publicly Accessible?</label>
@@ -53,6 +56,13 @@
          <div class="four columns">
             <label for="comment">Your Comments:</label>
             <input class="u-full-width" type="text" ng-model="comment" placeholder="Your comments.">
+        </div>
+
+
+
+        <div class="four columns">
+            <label for="restroom_id">WHICH RESTROOM:</label>
+            <input class="u-full-width" type="text" ng-model="restroom_id" placeholder="which restroom?">
         </div>
 
 <!--     <input type="text" ng-model="comment" placeholder="Your comments."><br><br>
