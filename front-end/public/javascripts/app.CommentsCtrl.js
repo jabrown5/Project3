@@ -1,5 +1,5 @@
 angular.module('pottyCheck')
-    .controller('CommentsCtrl', function ($scope, $http) {
+    .controller('CommentsCtrl', function ($scope, $http, $rootScope) {
         $scope.messages = [
             'please fill out all fields',
             'thanks for your post. view the blog to see it live'

@@ -1,4 +1,7 @@
 require 'sinatra/base'
+require 'sinatra/cross_origin'
+
+
 # require './app' #requires app.rb
 
 # run Sinatra::Application #starts server
@@ -28,15 +31,3 @@ map('/api/restroom') { run RestroomController}
 
 # life is good?
 # before/after filter
-# before '/*' do
-#   puts "Route Log:"
-#   puts request.host
-#   puts params
-#   puts request.path
-# end
-
-# after '/*' do
-#   puts 'Completed Route Log:'
-#   puts response.body
-#   puts response.status
-# end

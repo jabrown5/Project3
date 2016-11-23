@@ -18,6 +18,8 @@ class RestroomController < ApplicationController
   end
 
   post '/' do
+    # check params[:api_key] = 'catscatscats'
+    # if valid, do this
     @model = Restroom.new
     @model.facility_name  = params[:facility_name]
     @model.address        = params[:address]
@@ -31,6 +33,7 @@ class RestroomController < ApplicationController
 
     @model.save
     @model.to_json
+    # else {:status => 403}.to_json
   end
 
   patch '/:id' do
