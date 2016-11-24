@@ -1,39 +1,36 @@
 
-<!-- <header>
- -->  	
+
+<header role="banner" id="nav-wrap">
+  <div id="nav" class="headroom headroom--top">
+    <ul role="navigation" class="page">
+      <li>
+        <a class="active" href="/create">Post a potty</a>
+      </li>
+      <li>
+        <a class="active" href="/comments">Potty Comments</a>
+      </li>
+      <!-- <li>
+        <a href="/home">Home</a>
+      </li> -->
+      <li>
+        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/unirestroom.png" alt="Potty pic"></a>
+      </li>
+      <li> 
+        <a href="/locate">Find a Potty</a>
+      </li>
+      <li> 
+        <a href="/logout">Log Out</a>
+      </li>
+      <!-- ::after -->
+    </ul>
+  </div> 
+</header>
 
 
-<!--  <header role="banner" id="nav-wrap">
-	<div id="nav" class="headroom headroom-top">
-		<ul role="navigation" class="page">
-			<li>
-				<a href="/create">Post a potty</a>
-			</li>
-
-
-			<li>
-				<a href="/comments">Potty Comments</a>
-			</li>
-
-			<li>
-				<a  href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/toilet.jpeg" alt="Potty pic"></a>
-			</li>
-		
-			<li> 
-				<a href="/locate">Find a Potty</a>
-			</li>
-
-			<li> 
-				<a href="/logout">Log Out</a>
-			</li>
-		</ul>
-	</div>
-</header> -->
-
-			<!-- <li>
-				<a href="/home">Home</a>
-			</li> -->
-
+<footer>
+  <hr>
+  &copy 2016 Potty Check 
+</footer>
 
 <!-- <body>
  
@@ -41,19 +38,11 @@
   
 </body> -->
 
-<!-- TEST CODE: -->
-<!-- 
-      <p>{{message}}</p>
-<ul>
-    <li ng-repeat="potty in posts">
-        <p><em>{{potty.facility_name}}</em></p>
-        <p>{{potty.address}}</p>
-    </li>
-</ul> -->
 
 
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Autocomplete Form</title>
@@ -68,25 +57,12 @@
   </div>
 
 
-<!--   <div id="addressField">
-  <input id="autocomplete" type="text" placeholder="enter your address here yo!" onFocus="pottyLocate()"></input>
-  </div> -->
-
-
 <h1>Your Restroom Post</h1>
 
 <h2>this is the /create page</h2>
 <form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender)">
   <div class="row">
 
-
- <!--      <tr>
-        <td class="label">Location address</td>
-        <td class="slimField">
-        <input class="field" id="street_number" disabled="true"></input></td>
-        <td class="wideField">
-        <input class="field" id="route" disabled="true" ng-model="facility_name"></input></td>
-      </tr> -->
 
     <tr>
         <td class="label">Location name</td>
@@ -116,32 +92,12 @@
         <td class="wideField"><input class="field" id="postal_code" disabled="true"></input></td>
       </tr>
      
-  
-
-
-<!--      <div class="four columns">
-      <label for="facility-name">Location Name</label>
-      <input class="u-full-width" type="text" ng-model="facility_name" placeholder="Location Name">
-    </div>
-     <div class="three columns">
-      <label for="addresses">Where's Your Location</label>
-      <input class="u-full-width" type="text" ng-model="address" placeholder="Where's Your Location">
-    </div>
-    <div >
-      <label for="addresses">Where's Your Location</label>
-      <input class="u-full-width" type="text" ng-model="address" placeholder="Where's Your Location">
-    </div> -->
-
-
-
-
- <!--   <label for="latitudes"></label> -->
     <div>
       <input type="hidden" ng-model="latitude">
     </div>
 
     <div>
-    <!--   <label for="longitudes"></label> -->
+      <label for="longitudes"></label>
       <input type="hidden" ng-model="longitude">
     </div>
 
@@ -182,16 +138,23 @@
     </div>
 
      <div>
-    <!--   <label for="user_submissions"></label> -->
       <input type="hidden" ng-model="user_submission">
     </div>
    
     <input class="button button-primary" type="submit" value="Add Post">
 
       
-    </div> <!--end of div class=row-->
+    </div> 
 </form>
 
+  <h3>Potty Map with Marker</h3>
+  <div id="map"></div>
+ 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
+    <script src="scripts/app.HomeCtrl.js"></script>
+
+  </body>
+</html> -->
 
 
 
@@ -228,12 +191,3 @@
 
 
 
-
-  <h3>Potty Map with Marker</h3>
-  <div id="map"></div>
- 
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
-    <script src="scripts/app.HomeCtrl.js"></script>
-
-  </body>
-</html>

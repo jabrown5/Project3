@@ -13,10 +13,10 @@ angular.module('pottyCheck', [
         })
 
         $routeProvider
-            // .when('/', {
-            //     templateUrl: 'ngViews/home.html',
-            //     controller: 'PostsCtrl'
-            // })
+            .when('/', {
+                templateUrl: 'ngViews/admin.html',
+                // controller: 'AdminCtrl' // NEEDS FIXING !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
                 controller: 'HomeCtrl'
