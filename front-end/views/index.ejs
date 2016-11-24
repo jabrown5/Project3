@@ -2,22 +2,21 @@
 <html ng-app="pottyCheck">
   <head>
     <title><%= title %></title>
-<!--     <link rel='stylesheet' href='/stylesheets/style.css' />
- -->    
-    <link rel="stylesheet" href="/stylesheets/skeleton/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton/css/skeleton.css">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
     <!--GOOGLE PLACES JS FILES / LINKS-->
     <!--https://www.script-tutorials.com/google-places-api-practice/-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-   <!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script> -->
+<!--     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+ -->   <!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script> -->
     <!-- - - - - - - -->
 
     <!--USE THE FULL JS FILES FOR DEVELOPMENT-->
 <!--     <script src="/javascripts/jquery.js"></script>
- -->    <script src="/javascripts/angular.js"></script>
+ -->    
+    <script src="/javascripts/angular.js"></script>
     <script src="/javascripts/angular-route.js"></script>
-     <script src="/javascripts/angular-route.min.js"></script>
 
 
     <!-- - - - - - - -->
@@ -40,24 +39,17 @@
     <script src="/javascripts/app.HomeCtrl.js"></script>
     <script src="/javascripts/app.FindCtrl.js"></script>
     <!-- - - - - - - -->
-
-
   </head>
 
-  <body>
 
-<!--     <header>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/register">Register</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href='/create'>Create your potty post</a></li>
-            <li><a href='/comments'>Make a comment about a potty</a></li>
-        </ul>
-    </header> -->
 
- <header role="banner" id="nav-wrap">
-    <div id="nav" class="headroom headroom--top">
+<body ng-view style="background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;"></body>
+
+<!-- <body>
+ -->
+
+<!--  <header role="banner" id="nav-wrap">
+    <div id="nav" class="headroom headroom-top">
         <ul role="navigation" class="page">
 
             <li>
@@ -83,15 +75,19 @@
             </li>
         </ul>
     </div>
-</header>
+</header> -->
+
+
+
 
     <!-- this is similar to yield/body in erb/hbs -->
-    <div ng-view></div>
+<!--     <div ng-view></div>
 
     <footer>
       <hr>
       &copy 2016 Potty Check 
     </footer>
 
-  </body>
+  </body> -->
+
 </html>
