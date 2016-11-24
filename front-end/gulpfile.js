@@ -5,14 +5,14 @@ var nodemon = require('gulp-nodemon');
 
 
 // write a task that will convert a .scss file to a .css file.
-gulp.task("compile-sass", function() {
-    gulp.src("./public/stylesheets/style.sass")
-        .pipe(sass())
-        .pipe(gulp.dest("./public/stylesheets/"))
-});
-gulp.task("watch-sass", function() {
-    gulp.watch(["./public/stylesheets/style.sass"],["compile-sass"]);
-});
+// gulp.task("compile-sass", function() {
+//     gulp.src("./public/stylesheets/style.sass")
+//         .pipe(sass())
+//         .pipe(gulp.dest("./public/stylesheets/"))
+// });
+// gulp.task("watch-sass", function() {
+//     gulp.watch(["./public/stylesheets/style.sass"],["compile-sass"]);
+// });
 
 // nodemon it up!
 gulp.task('Nodemon', restartServer);
