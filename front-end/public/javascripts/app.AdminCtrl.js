@@ -1,5 +1,5 @@
 angular.module('pottyCheck')
-    .controller('AdminCtrl', function ($scope, $http) {
+    .controller('AdminCtrl', function ($scope, $http, $rootScope) {
         $scope.messages = [
             'please fill out all (to Register) fields',
             'thanks for your for registering.'
