@@ -4,22 +4,13 @@
 # flush privileges;
 
 default:
-  adapter: mysql2
-  database: pottyproject
-  username: jen
-  password: jen
-  host: localhost
+  adapter: sqlite3
+  database: pottyproject.db
 
 development:
-  adapter: mysql2
-  database: pottyproject
-  username: jen
-  password: jen
-  host: localhost
+  adapter: sqlite3
+  database: pottyproject.db
 
 production:
-  adapter: mysql2
-  database: pottyproject
-  username: jen
-  password: jen
-  host: localhost
+  adapter: sqlite3
+  database: pottyproject.db

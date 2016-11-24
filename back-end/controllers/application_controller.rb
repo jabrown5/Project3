@@ -15,8 +15,8 @@ class ApplicationController < Sinatra::Base
 	# set :views, File.expand_path('../../views', __FILE__)
 
 	ActiveRecord::Base.establish_connection(
-		:adapter => 'mysql2',
-		:database => 'pottyproject'
+		:adapter => 'sqlite3',
+		:database => 'pottyproject.db'
 	)
 
 	register Sinatra::CrossOrigin

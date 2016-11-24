@@ -47,7 +47,7 @@ angular.module('pottyCheck', [
             //     controller: 'DeletePostCtrl'
             // });
 
-        $routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({ redirectTo: '/home' });
     }
 ]);
 
