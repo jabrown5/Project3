@@ -1,12 +1,5 @@
 angular.module('pottyCheck')
     .controller('LoginCtrl', function ($scope, $http, $location, $rootScope) {
-        // $scope.messages = [
-        //     'Please enter your username and password',
-        //     'Thanks. You have successfully logged in.'
-        // ];
-        // $scope.message = $scope.messages[0];
-
-        // $rootScope.retrieved = [];
 
         $scope.goToHome = function() {
             $location.path('/home');
@@ -22,17 +15,22 @@ angular.module('pottyCheck')
                 }
             }).success(function (results) {
                 // if (results.status) {
-                if (!results.api_key) {
+                if (results.status == 403) {
                     //problem, check for 403
                     $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
+                    // console.log(results)
+                    // console.log($rootScope.api_key)
                 } else {
                     $scope.message = results.message;
+                    // $rootScope.api_key = results.api_key;
+                    // console.log($rootScope.api_key)
                     $rootScope.api_key = results.api_key;
-                    console.log($rootScope.api_key)
-                    $scope.goToHome();
+                    // console.log($rootScope.api_key)
+                    //$scope.goToHome();
+                    return $rootScope.api_key;
 
                 }
-                console.log(results)
+                // console.log($rootScope.api_key)
 
                 // // THIS WILL DISPLAY MESSAGE FROM SERVER SIDE INTO MESSAGE FIELD IN HTML UPON 
                 // // 1) INCORRECT USER PASSWORD ENTERED (IF), 2)  SUCCESSFUL LOGIN (ELSE)
