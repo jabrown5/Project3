@@ -16,6 +16,13 @@ class RestroomController < ApplicationController
   end
 
   post '/' do
+
+    p params
+
+    binding.pry
+
+
+
     @model = Restroom.new
     @model.facility_name  = params[:facility_name]
     @model.address        = params[:address]
