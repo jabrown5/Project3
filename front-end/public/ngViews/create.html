@@ -11,7 +11,7 @@
         <a href="/home">Home</a>
       </li> -->
       <li>
-        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/unirestroom.png" alt="Potty pic"></a>
+        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/images/unirestroom.png" alt="Potty pic"></a>
       </li>
       <li> 
         <a href="/locate">Find a Potty</a>
@@ -91,12 +91,15 @@
       <label for="user_submissions"></label> -
       <input type="hidden" ng-model="user_submission">
     </div>
-    <input style="margin-left: 265px; margin-top: 50px;" class="button button-primary" type="submit" value="Add Post">
+    <input style="margin-left: 265px; margin-top: 50px;" class="button button-primary" type="submit" ng-click="reset()" value="Add Post">
+   <!--  <button ng-click="reset()">RESET</button> not working-->
   </div>
 </form>
 </div>
 
-
+<footer>
+      &copy 2016 Potty Check 
+</footer>
 
 
 <!-- <h1>Your Restroom Post</h1>
