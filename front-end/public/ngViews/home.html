@@ -27,6 +27,21 @@
 </header>
 
 
+<!--   <div id="map"></div>
+ -->
+
+<!--  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+ -->
+
+
+<!-- TEST CODE FROM:  https://github.com/angular-ui/angular-google-maps/issues/1849 -->
+<ui-gmap-google-map ng-if="map.center"
+    options='map.options' 
+    center='map.center' 
+    zoom='map.zoom'>
+</ui-gmap-google-map>
+
+
 <footer>
   <hr>
   &copy 2016 Potty Check 

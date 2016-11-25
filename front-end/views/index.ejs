@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="pottyCheck">
   <head>
-    <title><%= title %></title>
-
+<!--     <title><%= title %></title>
+ -->
     <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton.css">
     <link rel="stylesheet" type="text/css" href="/public/stylesheets/style.css">
 
@@ -10,14 +10,27 @@
     <!--https://www.script-tutorials.com/google-places-api-practice/-->
 <!--     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
  -->   <!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script> -->
-    <!-- - - - - - - -->
+
+<!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+ --><script asyc defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAzS2reqRtaIwjuHg8mJ0frvl0TmdMJ0qk&language=en"></script>
+
+<!--  <script src='http://maps.google.cn/maps/api/js?sensor=false'></script>
+ -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initMap" defer></script>
+ -->   
+  <!-- - - - - - - -->
 
     <!--USE THE FULL JS FILES FOR DEVELOPMENT-->
 <!--     <script src="/javascripts/jquery.js"></script>
  -->    
+
     <script src="/javascripts/angular.js"></script>
     <script src="/javascripts/angular-route.js"></script>
 
+
+    <script src="/javascripts/angular-simple-logger.js"></script>
+    <script src="/javascripts/lodash.compat.js"></script>
+    <script src="/javascripts/angular-google-maps.js"></script>
 
     <!-- - - - - - - -->
 

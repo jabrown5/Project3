@@ -1,16 +1,23 @@
 console.log('THE POTTYCHECK PAGE IS LOADED!');
 
 angular.module('pottyCheck', [
-    'ngRoute'
+    'ngRoute', 'uiGmapgoogle-maps'
 ]).config([
     '$locationProvider',
     '$routeProvider',
-    function($locationProvider, $routeProvider) {
+    'uiGmapGoogleMapApiProvider',
+    function($locationProvider, $routeProvider, uiGmapGoogleMapApiProvider) {
 
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false // good for anything IE9+
-        })
+        });
+
+        uiGmapGoogleMapApiProvider.configure({
+            key: 'AIzaSyAzS2reqRtaIwjuHg8mJ0frvl0TmdMJ0qk',
+            v: '3.20', //defaults to latest 3.X anyhow
+            libraries: 'weather,geometry,visualization'
+        });
 
         $routeProvider
             .when('/', {
@@ -49,9 +56,4 @@ angular.module('pottyCheck', [
         $routeProvider.otherwise({ redirectTo: '/' });
     }
 ]);
-
-            // .when('/', {
-            //     templateUrl: 'ngViews/admin.html',
-            //     controller: 'AdminCtrl'
-            // })
 
