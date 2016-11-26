@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+#map {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 /*Nav Bar
 -----------------------------------------------------------*/
 
@@ -16,7 +30,11 @@
     overflow: hidden;
     position: relative;
     padding: 0;
+<<<<<<< HEAD
    /* background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;*/
+=======
+    background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 
 }
 
@@ -113,19 +131,29 @@ ___________________________________________________*/
 
 #adminparas {
 margin-top: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
 
 #adminsection {
    /* background: transparent url(/m/content/logo-nav-sprite.png) no-repeat 0 -68px;*/
+<<<<<<< HEAD
     background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
+=======
+    background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 365px;
     margin:0;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
 
 #toilet {
@@ -209,12 +237,19 @@ h1.ng-scope {
 }
 
 div#loginbody {
+<<<<<<< HEAD
     background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
+=======
+    background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
+<<<<<<< HEAD
     background-attachment: fixed;
+=======
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
 
 /*REGISTER
@@ -230,11 +265,16 @@ h1.ng-scope {
 }
 
 div#registerbody {
+<<<<<<< HEAD
     background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
+=======
+    background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
+<<<<<<< HEAD
     background-attachment: fixed;
 }
 
@@ -256,4 +296,12 @@ footer {
 
 /*# sourceMappingURL=style.css.map */
 
+=======
+}
+
+footer {
+    float:clear;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 
