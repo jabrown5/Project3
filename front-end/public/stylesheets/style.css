@@ -1,5 +1,3 @@
-.angular-google-map-container { height: 400px; }
-
 
 html, body {
     height: 100%;
@@ -253,3 +251,29 @@ footer {
 }
 /*# sourceMappingURL=style.css.map */
 
+
+// .angular-google-map-container { height: 400px; }
+
+.map-wrapper {
+    position: relative;
+    height: calc(100vh - 4em - 64px);
+}
+
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.angular-google-map-container {
+    height: 400px;
+    width: 75%;
+}
+
+.angular-google-map {
+    height: 400px;
+    width: 75%;    
+}

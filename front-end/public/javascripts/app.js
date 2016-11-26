@@ -6,6 +6,7 @@ angular.module('pottyCheck', [
     '$locationProvider',
     '$routeProvider',
     'uiGmapGoogleMapApiProvider',
+    // 'uiGmapgoogle-maps', // tet
     function($locationProvider, $routeProvider, uiGmapGoogleMapApiProvider) {
 
         $locationProvider.html5Mode({

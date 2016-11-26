@@ -1,3 +1,5 @@
+console.log('HOME CTRL IS LOADED')
+
 angular.module('pottyCheck')
     .controller('HomeCtrl', function($scope, $http, $rootScope, uiGmapGoogleMapApi) {
 
