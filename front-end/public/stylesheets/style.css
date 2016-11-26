@@ -71,7 +71,7 @@ ul{
 	background: #249ce0;
 	display: block;
     padding-left: 130px;
-    padding-top: 20px;
+    padding-top: 5px;
 	/*list-style-type: disc;*/
 	-webkit-margin-before: 1em;
 	/*-webkit-margin-after: 1em;*/
@@ -79,7 +79,7 @@ ul{
 	-webkit-margin-end: 0px;
 	/*-webkit-padding-start: 40px;*/
     margin-top: 0px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 ul.page {
     padding-left: 0px;
@@ -174,6 +174,12 @@ div#comments.container.ng-scope {
     /* margin-left: 410px; */
     /*margin-bottom: 25px;*/
 /*}*/
+
+h3#commentsheader.ng-scope {
+  /*text-align: center;*/
+}
+
+
 /*CREATE PAGE
 -------------------------------------------------*/
 div#create.container.ng-scope {
@@ -239,7 +245,15 @@ footer {
     float:clear;
 }
 
-@media (max-width: 479px) {
+
+
+
+
+
+/*MEDIA QUERY MOBILE DEVICE
+___________________________________________________*/
+
+@media (max-width: 480px) {
 
 /*    ADMIN PAGE
 ___________________________________________________*/
@@ -267,15 +281,13 @@ div.four.columns {
     padding-bottom: 10px;
 }
 
-input.button.button-primary {
-    margin-left: -44px;
-}
+
  .container input {
     width: 51%;
     clear: both;    
 }
 
- {
+/* {
     background-color: white;
     height: 209px;
     padding-top: 40px;
@@ -284,9 +296,45 @@ input.button.button-primary {
     width: 553px;
     margin-left: -57px;
 
+}*/
+
+/*LOGIN PAGE
+________________________________________________________*/
+
+div#loginnamefield.four.columns {
+    margin-top:-19px;
+    /*margin-left: -44px;*/
 }
 
+/* input#loginbutton.button.button-primary {
+    
+    margin-left: 2px;
+    width: 207px;
+    margin-top: 10px;
+}*/
+
 }
+/*
+COMMENTS PAGE
+_____________________________________________________________*/
+
+form#commentsform.ng-pristine.ng-valid {
+    margin-left: 10rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */
