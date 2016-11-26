@@ -13,6 +13,6 @@ angular.module('pottyCheck')
         }
 
         $scope.fetch();
-
     });
+
 

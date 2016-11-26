@@ -59,27 +59,30 @@
 
 <form ng-submit="createAccount(username, email, password)">
 
+>>>>>>> master
 	<div class="row">
 
 		<div class="four columns">
 
 			<label for="username">Username</label>
-		 	<input class="u-full-width" type="text" ng-model="username" placeholder="Username">
+		 	<input style="width: 220px;margin-right: 210px;" class="u-full-width" type="text" ng-model="username" placeholder="Username">
  		</div>
 
  		<div class="four columns">
 		 	<label for="email">Email</label>
-		 	<input class="u-full-width" type="text" ng-model="email" placeholder="Email">
+		 	<input id="registeremailfield" class="u-full-width" type="text" ng-model="email" placeholder="Email">
  		</div>
 
- 		<div class="four columns">
+ 		<div style="padding-bottom: 10px;" class="four columns">
 		 	<label for="password">Password</label>
 		 	<input class="u-full-width" type="text" ng-model="password" placeholder="password" required>
  		</div>
 
+<<<<<<< HEAD
+    <input type="hidden" ng-model="password_hash" placeholder="password"><br> <!-- is this hidden? -->
     <input class="button button-primary" type="submit" value="Sign Up">
     </div>
-</form> -->
+</form>
 
 
 <!-- 
@@ -94,3 +97,4 @@
     <input type="text" ng-model="password" placeholder="password"><br>
     <input type="submit" value="Sign Up">
 </form> -->
+

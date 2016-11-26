@@ -54,8 +54,4 @@ angular.module('pottyCheck', [
     }
 ]);
 
-            // .when('/', {
-            //     templateUrl: 'ngViews/admin.html',
-            //     controller: 'AdminCtrl'
-            // })
-
+          

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 html, body {
     height: 100%;
     margin: 0px;
@@ -11,7 +10,6 @@ html, body {
     padding: 0px
 }
 
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 /*Nav Bar
 -----------------------------------------------------------*/
 
@@ -30,11 +28,7 @@ html, body {
     overflow: hidden;
     position: relative;
     padding: 0;
-<<<<<<< HEAD
-   /* background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;*/
-=======
     background: transparent url(/stylesheets/Skeleton/images/toilet.jpeg) no-repeat 0 -68px;
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 
 }
 
@@ -99,6 +93,7 @@ ul{
     margin-top: 0px;
     padding-bottom: 10px;
 }
+
 ul.page {
     padding-left: 0px;
 }
@@ -131,29 +126,17 @@ ___________________________________________________*/
 
 #adminparas {
 margin-top: 15px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
 
 #adminsection {
    /* background: transparent url(/m/content/logo-nav-sprite.png) no-repeat 0 -68px;*/
-<<<<<<< HEAD
-    background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
-=======
     background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 365px;
     margin:0;
-<<<<<<< HEAD
-   
-=======
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
 
 #toilet {
@@ -176,7 +159,6 @@ a.button.button-primary {
     color: black;
     margin-left: 250px;
     width: 200px;
-
 }
 
 /*COMMENTS
@@ -237,20 +219,100 @@ h1.ng-scope {
 }
 
 div#loginbody {
-<<<<<<< HEAD
-    background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
-=======
     background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
-<<<<<<< HEAD
-    background-attachment: fixed;
-=======
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 }
+
+footer {
+    float:clear;
+}
+
+
+
+
+
+
+/*MEDIA QUERY MOBILE DEVICE
+___________________________________________________*/
+
+@media (max-width: 480px) {
+
+/*    ADMIN PAGE
+___________________________________________________*/
+
+a.button.button-primary {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+    width: 200px;
+
+}
+
+/*REGISTER PAGE
+____________________________________________________*/
+
+div.row {
+    height: 60px;
+    position: fixed;
+    margin-left: 28px;
+    margin-top: -32px
+}
+
+div.four.columns {
+    padding-bottom: 10px;
+}
+
+
+ .container input {
+    width: 51%;
+    clear: both;    
+}
+
+/* {
+    background-color: white;
+    height: 209px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    width: 553px;
+    margin-left: -57px;
+
+}*/
+
+/*LOGIN PAGE
+________________________________________________________*/
+
+div#loginnamefield.four.columns {
+    margin-top:-19px;
+    /*margin-left: -44px;*/
+}
+
+/* input#loginbutton.button.button-primary {
+    
+    margin-left: 2px;
+    width: 207px;
+    margin-top: 10px;
+}*/
+
+}
+
+/*
+COMMENTS PAGE
+_____________________________________________________________*/
+
+form#commentsform.ng-pristine.ng-valid {
+    margin-left: 10rem;
+    text-align: center;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
+
 
 /*REGISTER
 _________________________________________________*/
@@ -265,43 +327,15 @@ h1.ng-scope {
 }
 
 div#registerbody {
-<<<<<<< HEAD
-    background: transparent url(/stylesheets/images/bubbles.jpg) no-repeat center center fixed;
-=======
     background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
     height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
-<<<<<<< HEAD
-    background-attachment: fixed;
-}
-
-div.row {
-
-}
-/*footer
-________________________________________________________*/
-
-footer {
-    float:clear;
-     /*position: fixed;*/
-}
-
-#copyright {
-    
-}
-
-
-/*# sourceMappingURL=style.css.map */
-
-=======
 }
 
 footer {
     float:clear;
 }
 /*# sourceMappingURL=style.css.map */
->>>>>>> 71aa49666243b7b0017407411b42a29d11b87627
 

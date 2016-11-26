@@ -45,7 +45,6 @@ class RestroomController < ApplicationController
         @account_message = "You do not have authorization to post. Please register"
         return {:message => @account_message, :status => 403 }.to_json
     end
-
   end
 
   patch '/:id' do

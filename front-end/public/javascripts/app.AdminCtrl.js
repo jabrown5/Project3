@@ -18,7 +18,6 @@ angular.module('pottyCheck')
                 console.log(err);
             });
         };
-
     });
 
     //same as register controller
