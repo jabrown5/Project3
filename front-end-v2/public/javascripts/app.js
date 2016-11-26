@@ -40,9 +40,17 @@ angular.module('pottyCheck', [
         })
 
         $routeProvider
+            // .when('/', {
+            //     templateUrl: 'ngViews/admin.html',
+            //     // controller: 'MapCtrl' // NEEDS FIXING !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            // })
             .when('/', {
                 templateUrl: 'ngViews/admin.html',
-                // controller: 'MapCtrl' // NEEDS FIXING !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                // controller: 'MapCtrl'
+            })
+            .when('/map', {
+                templateUrl: 'ngViews/map.html',
+                controller: 'MapCtrl'
             })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
