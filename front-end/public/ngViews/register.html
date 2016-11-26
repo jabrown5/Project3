@@ -14,14 +14,14 @@
 
 <div class="container" id="comments">
 <div>
-<form style="background-color: white; margin-top: 50px; padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 40px; height: 150px;" ng-submit="createAccount(username, email, password)">
-
+<!-- <form style="background-color: white; margin-top: 50px; padding-left: 200px; padding-right: 30px; padding-top: 40px; padding-bottom: 40px; height: 150px;" ng-submit="createAccount(username, email, password)"> -->
+<form style="background-color: white; height: 150px;padding-top: 40px; padding-bottom: 25px;" ng-submit="createAccount(username, email, password)">
 	<div class="row">
 
 		<div class="four columns">
 
 			<label for="username">Username</label>
-		 	<input class="u-full-width" type="text" ng-model="username" placeholder="Username">
+		 	<input style="width: 220px;margin-right: 210px;" class="u-full-width" type="text" ng-model="username" placeholder="Username">
  		</div>
 
  		<div class="four columns">
@@ -35,7 +35,7 @@
  		</div>
 
     <input type="hidden" ng-model="password_hash" placeholder="password"><br> <!-- is this hidden? -->
-    <input style="margin-left: 250px;"  class="button button-primary" type="submit" value="Sign Up">
+    <input style="margin-left: 215px;"  class="button button-primary" type="submit" value="Sign Up">
     </div>
 </form> 
 </div>

@@ -21,13 +21,15 @@ angular.module('pottyCheck')
             }).success(function (results) {
                 $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
                 console.log($scope.message)
+                // attempt to clear form
+                // $scope.model = {};
+                // $scope.myForm.$setPristine();
 
             }).error(function (err) {
                 console.log('ajax use go down hole--ERROR');
                 console.log(err);
             });
         };
-
 
         // $scope.empList = [];
         // $scope.addemp = {};
@@ -38,8 +40,8 @@ angular.module('pottyCheck')
         // $scope.reset = function() {
         //   $scope.addemp = {};
         //   $scope.form.$setPristine();
-        // }
-    });
+        // };
+});
 
 
     // angular.module('pottyCheck')

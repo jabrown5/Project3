@@ -134,6 +134,7 @@ margin-top: 15px;
 .row {
 	height: 60px;
 	position: fixed;
+    margin-left: 85px;
 }
 
 .button{
@@ -182,7 +183,7 @@ div#create.container.ng-scope {
     border: solid 5px black;
     border-radius: 15px;
     position: fixed;
-    margin-left: 250px;
+    margin-left: 240px;
 }
 
 h1.ng-scope {
@@ -237,4 +238,55 @@ div#registerbody {
 footer {
     float:clear;
 }
+
+@media (max-width: 479px) {
+
+/*    ADMIN PAGE
+___________________________________________________*/
+
+a.button.button-primary {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+    width: 200px;
+
+}
+
+/*REGISTER PAGE
+____________________________________________________*/
+
+div.row {
+    height: 60px;
+    position: fixed;
+    margin-left: 28px;
+    margin-top: -32px
+}
+
+div.four.columns {
+    padding-bottom: 10px;
+}
+
+input.button.button-primary {
+    margin-left: -44px;
+}
+ .container input {
+    width: 51%;
+    clear: both;    
+}
+
+ {
+    background-color: white;
+    height: 209px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    width: 553px;
+    margin-left: -57px;
+
+}
+
+}
+
+
 /*# sourceMappingURL=style.css.map */
