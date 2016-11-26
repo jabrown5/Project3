@@ -23,8 +23,6 @@ angular.module('pottyCheck')
                 }
             }).success(function (results) {
                 $scope.message = results.message; // RENDERS MESSAGE INDICATING CORRECT/INCORRECT LOGIN CREDENTIALS
-                console.log($scope.message)
-
             }).error(function (err) {
                 console.log('ajax use go down hole--ERROR');
                 console.log(err);
