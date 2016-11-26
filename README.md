@@ -2,11 +2,11 @@
 The Potty Project
 
 ##Wireframe images
-*![wireframeimages:homepage](/Project3/pottycheckwireframe/pottycheck/homepage.jpg)
-*![wireframeimages:indexpage](/Project3/pottycheckwireframe/pottycheck/indexpage.jpg)
-*![wireframeimages:option1page](/Project3/pottycheckwireframe/pottycheck/map/option1page.jpg)
-*![wireframeimages:option2page](/Project3/pottycheckwireframe/pottycheck/map/option2page.jpg)
-*![wireframeimages:pottypostpage](/Project3/pottycheckwireframe/pottycheck/map/pottypostpage.jpg)
+*![wireframeimages:homepage](/Project3/pottycheckwireframe/homepage.jpg)
+*![wireframeimages:indexpage](/Project3/pottycheckwireframe/indexpage.jpg)
+*![wireframeimages:option1page](/Project3/pottycheckwireframe/option1page.jpg)
+*![wireframeimages:option2page](/Project3/pottycheckwireframe/option2page.jpg)
+*![wireframeimages:pottypostpage](/Project3/pottycheckwireframe/pottypostpage.jpg)
 
 ##User Experience Description
 ![user experience story](/Project3/User-Experience-for-Potty-Check)

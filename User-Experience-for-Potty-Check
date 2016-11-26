@@ -1,0 +1,8 @@
+User Experience for Potty Check
+
+Often times, when out and about, the "urge" hits and one needs to find a restroom right away...preferably a clean restroom.
+
+We've created an app to address this need. First, users must register to gain access to app content.  They are then directed to our home page, where a map with restroom markers that are in proximity to their location in the city of Chicago is provided.  Additional information such as comments, cleanliness, gender specified is provided to our users to make an informed decision via the markers. Other app features:  
+	*The user can make a restroom post of their own via the "Post a Potty" option on the navigation bar.  Here, they can post details such as location, family friendly status, cleanliness status and whether the restroom is gender specifed.
+	*Another feature located at the "Potty Comments" tab is a comments form.  Here, the user can chime in on an already existing restroom posted on the map.
+
