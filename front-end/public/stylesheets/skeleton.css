@@ -359,9 +359,9 @@ table,
 ol,
 form {
   margin-bottom: 2.5rem; 
- /* margin-left: 2.5rem;*/
-  /*margin-right: 2.5rem;*/
-  /*margin-top: 2.5rem;*/
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
- <html>
- <head>
-   <title></title>
- </head>
- <body>
- 
- <header role="banner" id="nav-wrap">
+<html>
+  <head>
+    <title>Autocomplete Form</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="styles/main.css"/> -->
+  </head>
+  <body>
+
+    <header role="banner" id="nav-wrap">
   <div id="nav" class="headroom headroom--top">
     <ul role="navigation" class="page">
       <li>
@@ -14,11 +17,11 @@
       <li>
         <a class="active" href="/comments">Potty Comments</a>
       </li>
-      <!-- <li>
+     <!--  <li>
         <a href="/home">Home</a>
       </li> -->
       <li>
-        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/unirestroom.png" alt="Potty pic"></a>
+        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/images/unirestroom.png" alt="Potty pic"></a>
       </li>
       <li> 
         <a href="/locate">Find a Potty</a>
@@ -26,13 +29,20 @@
       <li> 
         <a href="/logout">Log Out</a>
       </li>
-      <!-- ::after -->
-    </ul>
+      <!-- <! ::after
+    <!</ul> -->
   </div>
-</header>
+  
+</header> --> 
+ 
+<!--   <h1>this is the home page</h1> -->
 
-<h1>this is where our map lives</h1>
-<!-- <h1>Your Restroom Post</h3>
+
+<div id="addressField">
+  <input id="autocomplete" type="text" placeholder="locationName" onFocus="pottyLocate()"></input>
+  </div>
+
+<h1>Your Restroom Post</h3>
 <style type="text/css">
     .container {
         width: 900px;
@@ -47,21 +57,48 @@
 <div class="container" id="create">
 <form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender)">
   <div style="left:300px;" class="row">
+<tr>
      <div class="four columns">
-      <label for="facility-name">Location Name</label>
-      <input class="u-full-width" type="text" ng-model="facility_name" placeholder="Location Name">
+
+       <td class="label"><label for="facility-name">Location Name</label></td>
+      <td class="slimField"><input class="field" id="" disabled="true"></input></td>
+
+      <td class="wideField"><input class="field" id="route"  ng-model="facility_name" placeholder="Location Name"></input></td>
+      </tr>
     </div>
-    <div class="three columns">
-      <label style="width: 200px;"for="addresses">Where's Your Location</label>
+
+    <tr>
+        <td class="label">Location address</td>
+        <td class="slimField"><input class="field" id="street_number" disabled="true"></input></td>
+
+        <td class="wideField" ><input class="field" id="route" disabled="true" ng-model="address"></input></td>
+      </tr>
+
+      <tr>
+        <td class="label">City</td>
+        <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input></td>
+      </tr>
+      
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input></td>
+
+
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code" disabled="true"></input></td>
+      </tr>
+
+  <!--  <div class="three columns">
+      <label style="width: 200px;" for="addresses">Where's Your Location</label>
       <input style="width: 230px;" class="u-full-width" type="text" ng-model="address" placeholder="Where's Your Location">
     </div>
-    <div>
-    <!-  <label for="latitudes"></label> -->
-      <!-- <input type="hidden" ng-model="latitude">
-    </div>
     <div> -->
+    <!--   <label for="latitudes"></label> -->
+      <input type="hidden" ng-model="latitude">
+    </div>
+    <div>
     <!--   <label for="longitudes"></label> -->
-      <!-- <input type="hidden" ng-model="longitude">
+      <input type="hidden" ng-model="longitude">
     </div>
     <div class="three columns" style="margin-left: 10px; width: 220px">
       <label style="margin-left: 50px; width: 200px;" for="publicaccessibility">Is This Publicly Accessible?</label>
@@ -103,7 +140,19 @@
 </form>
 </div>
 
+  <h3>Potty Map with Marker</h3>
+  <div id="map"></div>
+ 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
+    <script src="/public/javascripts/mapapp.js"></script>
 
- </body> --> 
- </html>
+<!-- 
+<h3>Potty Map with Marker</h3>
+  <div id="map"></div> -->
+ 
+ 
+   <!--  <script src="/public/javascripts/mapapp.js"></script> -->
+  
 
+</body>
+</html>

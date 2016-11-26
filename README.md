@@ -2,14 +2,14 @@
 The Potty Project
 
 ##Wireframe images
-*![/Project3/pottycheckwireframe/homepage.jpg](homepage)
-*![/Project3/pottycheckwireframe/indexpage.jpg](indexpage)
-*![/Project3/pottycheckwireframe/mapoption1page.jpg](mapoption1)
-*![/Project3/pottycheckwireframe/mapoption2page.jpg](mapoption2)
-*![/Project3/pottycheckwireframe/pottypostpage.jpg](pottypostpage)
+*![wireframeimages:homepage](/Project3/pottycheckwireframe/pottycheck/homepage.jpg)
+*![wireframeimages:indexpage](/Project3/pottycheckwireframe/pottycheck/indexpage.jpg)
+*![wireframeimages:option1page](/Project3/pottycheckwireframe/pottycheck/map/option1page.jpg)
+*![wireframeimages:option2page](/Project3/pottycheckwireframe/pottycheck/map/option2page.jpg)
+*![wireframeimages:pottypostpage](/Project3/pottycheckwireframe/pottycheck/map/pottypostpage.jpg)
 
 ##User Experience Description
-![/Project3/User-Experience-for-Potty-Check](user experience story)
+![user experience story](/Project3/User-Experience-for-Potty-Check)
 
 Our app is supported via two servers.  
 *The front-end is served by an Express Server where Angular, CSS, Skeleton collaboratively renders and routes the pages/information.  
