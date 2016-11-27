@@ -1,9 +1,6 @@
-<!-- <body style="background: transparent url(/stylesheets/Skeleton/images/bubbles.jpg) no-repeat center center fixed;"> 
- -->
-
-<h1 id="formheader">Potty Check Return User</h1>
+<h4 class="header center orange-text">Potty Check Return User</h4>
 <div id="loginbody">
-<style type="text/css">
+<!-- <style type="text/css">
     .container {
         width: 900px;
         clear: both;
@@ -12,13 +9,13 @@
         width: 100%;
         clear: both;
     }
-</style>
+</style> -->
 
-<div class="container" id="comments">
-		<form style="background-color: white; margin-top: 50px; padding-left: 30px; padding-right: 30px; padding-top: 40px; padding-bottom: 40px;" ng-submit="loginAccount(username, email, password)">
+<div class="container" id="comments" style="height:200px;">
+		<form ng-submit="loginAccount(username, email, password)">
 
 			<div class="four columns">
-			 	<label for="username">Your name</label>
+			 	<!-- <label for="username">Your name</label> -->
 			 	<input class="u-full-width" type="text" ng-model="username" placeholder="Name" required>
 	 		</div>
 
@@ -27,13 +24,13 @@
 			 	<input class="u-full-width" type="text" ng-model="email" placeholder="email" required>
 	 		</div> -->
 
-	 		<div style="padding-bottom: 10px;" class="four columns">
-			 	<label for="password">Password</label>
+	 		<div class="four columns">
+			 	<!-- <label for="password">Password</label> -->
 			 	<input class="u-full-width" type="text" ng-model="password" placeholder="password" required>
 	 		</div>
-
+<!-- <a class="center light-blue lighten-2 waves-effect waves-light btn-large" href='/login'> -->
 	 		<div>
-				<input style="margin-left: 275px;" class="button button-primary" type="submit" value="Login">
+				<input class="center light-blue lighten-2 waves-effect waves-light btn-large" type="submit" value="Login">
 			</div>
 		</form>
 	<p>{{message}}</p>
