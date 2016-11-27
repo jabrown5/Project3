@@ -33,38 +33,6 @@ angular.module('pottyCheck')
                     return ($rootScope.api_key, $rootScope.user_submission);
 
                 }
-                // console.log($rootScope.api_key)
-
-                // // THIS WILL DISPLAY MESSAGE FROM SERVER SIDE INTO MESSAGE FIELD IN HTML UPON 
-                // // 1) INCORRECT USER PASSWORD ENTERED (IF), 2)  SUCCESSFUL LOGIN (ELSE)
-                // if (!results.api_key) {
-                //     $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
-                //     $rootScope.retrieved = results;
-
-                //     // $rootScope.session = {
-                //     //         loggedIn: true
-                            
-                //     //     }
-                //     //     console.log($rootScope.session)
-
-                // } else {
-                //     // $scope.message = results.message;
-
-                //     // $rootScope.session = object[0];
-
-                //         $rootScope.session = {
-                //             loggedIn: true,
-                //             api_key: results[0]
-                //         }
-
-
-
-                //     console.log($rootScope.session)
-                //     $scope.goToHome(); // UPON SUCCESSFUL LOGIN, REDIRECTS TO HOME PAGE
-
-                // }
-
-
             }).error(function (err) {
                 console.log('ERROR -- ERROR -- failed to login user.');
                 console.log(err);
