@@ -1,9 +1,17 @@
 angular.module('pottyCheck')
     .controller('CreatePostCtrl', function ($scope, $http, $rootScope) {
 
-        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key) {
+        $scope.createPost = function(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission) {
+
+            // CODING HELP FOUND AT: 
+            // http://stackoverflow.com/questions/39107643/angularjs-form-input-with-google-places-api-not-saving-full-string
+            var address = document.getElementById('autocomplete').value; 
+            var latitude = document.getElementById('lat').value;
+            var longitude = document.getElementById('lng').value;
 
             var api_key = $rootScope.api_key;
+            var user_submission = $rootScope.user_submission;
+
             $http({
                 url: 'http://localhost:9292/api/restroom/',
                 method: 'POST',
@@ -16,11 +24,13 @@ angular.module('pottyCheck')
                     gender: gender,
                     latitude: latitude,
                     longitude: longitude,
-                    api_key: api_key
+                    api_key: api_key,
+                    user_submission: user_submission
                 }
             }).success(function (results) {
                 $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
                 console.log($scope.message)
+                console.log(results)
 
             }).error(function (err) {
                 console.log('ajax use go down hole--ERROR');
@@ -28,6 +38,7 @@ angular.module('pottyCheck')
             });
         };
     });
+
 
 
     // angular.module('pottyCheck')

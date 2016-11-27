@@ -80,7 +80,7 @@ class AccountController < ApplicationController
 	       
 	        if @password == @model.password_hash
 				@account_message = "Welcome back!"
-				return {:message => @account_message, :api_key => 'catscatscatscats' }.to_json
+				return {:message => @account_message, :api_key => 'catscatscatscats', :username => @username }.to_json
 				# return {:message => @account_message }.to_json
 
 		        # UPON SUCCESSFUL LOGIN, SENDING USER INFO TO CLIENT SIDE

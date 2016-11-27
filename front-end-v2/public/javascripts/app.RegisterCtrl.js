@@ -39,9 +39,10 @@ angular.module('pottyCheck')
                     // $rootScope.api_key = results.api_key;
                     // console.log($rootScope.api_key)
                     $rootScope.api_key = results.api_key;
+                    $rootScope.username = results.username;
                     // console.log($rootScope.api_key)
                     //$scope.goToHome();
-                    return $rootScope.api_key;
+                    return ($rootScope.api_key, $rootScope.username);
 
                 }
 
