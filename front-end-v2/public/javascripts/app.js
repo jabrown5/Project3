@@ -253,6 +253,7 @@ window.onload = function initFirstMap(){
         var place = autocomplete.getPlace();
 
         for (var component in componentForm) {
+          // document.getElementById(component).material_select();
           document.getElementById(component).value = '';
           document.getElementById(component).disabled = false;
         }
@@ -264,8 +265,12 @@ window.onload = function initFirstMap(){
             var val = place.address_components[i][componentForm[addressType]];
             document.getElementById(addressType).value = val;
 
-            console.log(place.geometry.location.lat(), 'lat', place.geometry.location.lng(), 'long')
-            console.log(val, 'val')
+            document.getElementById('lat').value = place.geometry.location.lat();
+            document.getElementById('lng').value = place.geometry.location.lng();
+
+
+            // console.log(place.geometry.location.lat(), 'lat', place.geometry.location.lng(), 'long')
+            // console.log(val, 'val')
             //var theLat  = place.geometry.location.lat(),
             //var theLong = place.geometry.location.lat()
           }

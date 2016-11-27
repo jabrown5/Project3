@@ -80,7 +80,7 @@ class AccountController < ApplicationController
 	       
 	        if @password == @model.password_hash
 				@account_message = "Welcome back!"
-				return {:message => @account_message, :api_key => 'catscatscatscats' }.to_json
+				return {:message => @account_message, :api_key => 'catscatscatscats', :username => @username }.to_json
 				# return {:message => @account_message }.to_json
 
 		        # UPON SUCCESSFUL LOGIN, SENDING USER INFO TO CLIENT SIDE
@@ -126,12 +126,17 @@ class AccountController < ApplicationController
 		# they will then need to login again
 		p session
 		session[:user] = nil
+
+		@username = nil
+		@password = nil
+		@api_key = nil
+
 		# @username = nil
-		redirect '/'
+		# redirect '/'
 
 		@account_message = "You've been logged out."
 		# return @model.to_json
-		return {:message => @account_message, :status => 403, :api_key => '' }.to_json
+		return {:message => @account_message, :status => 403, :api_key => '' , :username => @username }.to_json
 	end
 
 end
