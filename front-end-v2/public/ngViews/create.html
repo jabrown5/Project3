@@ -9,15 +9,20 @@
 </style>
 
 
+<!-- <input  type="text" 
+        ng-model="query"
+        ng-places-autocomplete 
+        pa-options="optionsObject" 
+        pa-trigger="triggerFunc"
+        pa-on-place-ready="callbackFunction"
+/> --> 
 
 
-
-
-<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude)">
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)">
   <div class="row">
 
   <div id="addressField">
-    <input id="autocomplete" type="text" placeholder="ENTER ADDRESS HERE!" onFocus="pottyLocate()" ng-model="address"></input>
+    <input id="autocomplete" type="text" placeholder="ENTER ADDRESS HERE!" onFocus="pottyLocate()" ng-model="address" ng-places-autocomplete ></input>
   </div> 
 
       <tr >

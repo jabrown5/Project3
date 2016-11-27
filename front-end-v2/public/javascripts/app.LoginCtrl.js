@@ -27,6 +27,8 @@ angular.module('pottyCheck')
                     $rootScope.api_key = results.api_key;
                     $rootScope.user_submission = results.username;
                     // console.log($rootScope.api_key)
+                    console.log(results)
+                    // console.log($rootScope.api_key)
                     //$scope.goToHome();
                     return ($rootScope.api_key, $rootScope.user_submission);
 
