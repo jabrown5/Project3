@@ -49,15 +49,15 @@ angular.module('pottyCheck', [
                 // controller: 'MapCtrl'
             })
             .when('/map', {
-                templateUrl: 'ngViews/map.html',
+                templateUrl: 'ngViews/map.html', // BOUNCING PINS, ALSO FOUND ON HOMEPAGE
                 // controller: 'MapCtrl'
             })
             .when('/find', {
-                templateUrl: 'ngViews/find.html',
+                templateUrl: 'ngViews/find.html', // INCLUDES ARRAY OF PRE-MADE TOILET LOCATIONS
                 // controller: 'MapCtrl'
             })
             .when('/youAreHere', {
-                templateUrl: 'ngViews/newmarker.html',
+                templateUrl: 'ngViews/newmarker.html', // IS YOUR CURRENT LOCATION W/ NO TOILETS
                 // controller: 'MapCtrl'
             })
             .when('/home', {
