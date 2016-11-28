@@ -1,18 +1,210 @@
 <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initMap" defer></script>  
   <script src="/javascripts/app.HomeCtrl.js"></script>
 
+<<<<<<< HEAD
  -->
   <h3>Potty Map with Mark???</h3>
   <div id="map"></div>
 
 <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script> -->
+=======
+
+<header role="banner" id="nav-wrap">
+  <div id="nav" class="headroom headroom--top">
+    <ul role="navigation" class="page">
+      <li>
+        <a class="active" href="/create">Post a potty</a>
+      </li>
+      <li>
+        <a class="active" href="/comments">Potty Comments</a>
+      </li>
+      <!-- <li>
+        <a href="/home">Home</a>
+      </li> -->
+      <li>
+        <a href="/home" title="Home | PottyCheck"><img id="toilet" src="/stylesheets/Skeleton/images/unirestroom.png" alt="Potty pic"></a>
+      </li>
+      <li> 
+        <a href="/locate">Find a Potty</a>
+      </li>
+      <li> 
+        <a href="/logout">Log Out</a>
+      </li>
+      <!-- ::after -->
+    </ul>
+  </div> 
+</header>
+>>>>>>> master
+
+
+<footer>
+  <hr>
+  &copy 2016 Potty Check 
+</footer>
+
+<<<<<<< HEAD
+
+=======
+<!-- <body>
+ 
+  <h1>this is the home page</h1>
+  
+</body> -->
 
 
 
 
 
-<!-- TEST CODE: -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Autocomplete Form</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css"/>
+  </head>
+  <body>
+  
+  <div id="addressField">
+  <input id="autocomplete" type="text" placeholder="locationName" onFocus="pottyLocate()"></input>
+  </div>
 
+
+<h1>Your Restroom Post</h1>
+
+<h2>this is the /create page</h2>
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender)">
+  <div class="row">
+
+
+    <tr>
+        <td class="label">Location name</td>
+      <td class="slimField"><input class="field" id="" disabled="true"></input></td>
+
+        <td class="wideField" ><input class="field" id="route" disabled="true" ng-model="facility_name"></input></td>
+      </tr>
+
+      <tr>
+        <td class="label">Location address</td>
+        <td class="slimField"><input class="field" id="street_number" disabled="true"></input></td>
+
+        <td class="wideField" ><input class="field" id="route" disabled="true" ng-model="address"></input></td>
+      </tr>
+
+      <tr>
+        <td class="label">City</td>
+        <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true"></input></td>
+      </tr>
+      
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true"></input></td>
+
+
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code" disabled="true"></input></td>
+      </tr>
+     
+    <div>
+      <input type="hidden" ng-model="latitude">
+    </div>
+
+    <div>
+      <label for="longitudes"></label>
+      <input type="hidden" ng-model="longitude">
+    </div>
+
+
+    <div class="three columns">
+      <label for="publicaccessibility">Is This Publicly Accessible?</label>
+      <select class="u-full-width" type="text" ng-model="publicly_accessible">
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
+      </select>   
+    </div>
+    
+    <div class="three columns">
+      <label for="cleanliness">How Clean Is It?</label>
+      <select class="u-full-width" type="text" ng-model="cleanliness">
+        <option value="1">very dirty</option>
+        <option value="2">somewhat dirty</option>
+        <option value="3">neither clean nor dirty</option>
+        <option value="4">somewhat clean</option>
+        <option value="5">very clean</option>
+      </select>   
+    </div>
+    
+    <div class="three columns">
+      <label for="familyfriendly">Is This Family Friendly?</label>
+      <select class="u-full-width" type="text" ng-model="family_friendly">
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>   
+    </div>
+    
+   <div class="three columns">
+      <label for="gender">Is This Gender Specific?</label>
+      <select class="u-full-width" type="text" ng-model="gender">
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>   
+    </div>
+
+     <div>
+      <input type="hidden" ng-model="user_submission">
+    </div>
+   
+    <input class="button button-primary" type="submit" value="Add Post">
+
+      
+    </div> 
+</form>
+
+  <h3>Potty Map with Marker</h3>
+  <div id="map"></div>
+ 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
+    <script src="scripts/app.HomeCtrl.js"></script>
+
+  </body>
+</html> -->
+
+
+
+<!-- <div id="container">
+  <table id="addressTable">
+      <tr>
+        <td class="label">Street address</td>
+        <td class="slimField"><input class="field" id="street_number"
+              disabled="true"></input></td>
+        <td class="wideField" colspan="2"><input class="field" id="route"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">City</td>
+        <td class="wideField" colspan="3"><input class="field" id="locality"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field"
+              id="administrative_area_level_1" disabled="true"></input></td>
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code"
+              disabled="true"></input></td>
+      </tr>
+      <tr>
+        <td class="label">Country</td>
+        <td class="wideField" colspan="3"><input class="field"
+              id="country" disabled="true"></input></td>
+      </tr>
+  </table>    
+</div> -->
+
+>>>>>>> master
+
+
+<<<<<<< HEAD
 <!--       <p>{{message}}</p>
 <ul>
     <li ng-repeat="potty in posts">
@@ -20,4 +212,6 @@
         <p>{{potty.address}}</p>
     </li>
 </ul> -->
+=======
+>>>>>>> master
 
