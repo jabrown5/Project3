@@ -62,7 +62,7 @@ angular.module('pottyCheck', [
             })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
-                controller: 'HomeCtrl'
+                // controller: 'HomeCtrl'
             })
             .when('/register', {
                 templateUrl: 'ngViews/register.html',

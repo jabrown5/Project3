@@ -4,6 +4,8 @@
     <!-- Import Google Icon Fonts -->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' media="screen,projection" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="javascripts/materialize.min.js"></script>
@@ -36,15 +38,22 @@
     </script>
 
 
+        <div class="left animated bounce" id="logo-container" href="/" class="brand-logo" >
+          <img id="toilet"  src="stylesheets/images2/unirestroom.png" alt="Unisex Restroom Symbol" style="margin-left:2rem; padding-top: .75rem; height: 130px; width: 130px;">
+        </div>
+
+
   </head>
   <body>
 
   <nav class="light-blue darken-1" role="navigation" style="height:10rem">
 
       <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">
+
+{{!--         <a id="logo-container" href="/" class="brand-logo">
           <img id="toilet" src="stylesheets/images2/unirestroom.png" alt="Unisex Restroom Symbol" style="margin-left:2rem; padding-top: .75rem; height: 130px; width: 130px;">
-        </a>
+        </a> --}}
+
 
           <ul class="right hide-on-med-and-down">
               <li ng-controller="LoginCtrl" ng-click="logOutAccount(username, email, password)"><a href="/logout">Logout</a></li>
