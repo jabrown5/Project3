@@ -12,16 +12,16 @@
           }
   </style>
 
-<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)">
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)" style="margin-left: 20rem;margin-right: 20rem;">
 
-  <div id="addressField">
-    <input id="autocomplete" type="text" placeholder="ENTER ADDRESS HERE!" onFocus="pottyLocate()" ng-model="address" ng-places-autocomplete ></input>
+  <div class="grey-text text-lighten-1" id="addressField">
+    <input id="autocomplete" type="text" placeholder="Enter Address Here!" onFocus="pottyLocate()" ng-model="address" ng-places-autocomplete ></input>
   </div> 
 
 
   <div class="row">
 
-    <tr >
+    <tr>
       <td class="label"><!-- Location address --></td>
       <td class="slimField">
         <input type="hidden" class="field" id="street_number" disabled="true" ></input>
@@ -35,7 +35,7 @@
     <tr>
       <td class="label"><!-- Location name --></td>
       <td class="slimField"><input type="hidden" class="field" id="" disabled="true"></input></td>
-      <td class="wideField" ><input class="field" placeholder="Facility Name" id="route"  ng-model="facility_name"></input></td>
+      <td class="wideField grey-text text-lighten-1" ><input class="field" placeholder="Facility Name" id="route"  ng-model="facility_name"></input></td>
     </tr>
 
     <tr type="hidden">
@@ -62,7 +62,7 @@
       <input type="hidden" class="field" id="lng" disabled="true" ng-model="longitude">
     </div>
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="publicly_accessible" >
         <option value="">Is This Publicly Accessible?</option>
         <option value="Yes">Yes</option>
@@ -70,7 +70,7 @@
     </select>
 </div>  
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="cleanliness" >
         <option value="">How Clean Is It?</option>
         <option value="1">very dirty</option>
@@ -81,7 +81,7 @@
     </select>
 </div>
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="family_friendly">
         <option value="">Is This Family Friendly?</option>
         <option value="Yes">Yes</option>
@@ -89,7 +89,7 @@
     </select>
 </div>
 
-<div class="input-field col s12">  
+<div " class="input-field col s12 grey-text text-lighten-1">  
     <select ng-model="gender" >
         <option value="">Is This Gender Specific?</option>
         <option value="Yes">Yes</option>
