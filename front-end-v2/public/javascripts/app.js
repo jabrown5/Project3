@@ -56,6 +56,10 @@ angular.module('pottyCheck', [
                 templateUrl: 'ngViews/find.html',
                 // controller: 'MapCtrl'
             })
+            .when('/youAreHere', {
+                templateUrl: 'ngViews/newmarker.html',
+                // controller: 'MapCtrl'
+            })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
                 controller: 'HomeCtrl'

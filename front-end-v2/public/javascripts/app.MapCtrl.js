@@ -169,4 +169,65 @@ function initFirstMap2(){
       // }
 
 
+//========================================================
+//========================================================
+//========================================================
+//========================================================
+
+function initMarkerMap2() {
+        var pottymap = new google.maps.Map(document.getElementById('newmarkermap'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 16
+        });
+
+
+        var infoWindow = new google.maps.InfoWindow({
+          map: pottymap,
+          maxWidth: 200
+        });
+//=======================================================
+        var contentStringOne = "from the database";
+        var infowindowOne = new google.maps.InfoWindow({
+            content: contentStringOne
+            });
+        //this is the lat and long that would come from the database
+        var position   // ???????????????????
+
+        var pottyoneMarker = new google.maps.Marker({
+            position: position,
+            //position: {lat: 41.889354, lng: -87.625114409},
+            map: pottymap,
+            title: "Review from Database"
+            //icon: image
+            });
+            pottyoneMarker.addListener('click', function() {
+            infowindowOne.open(pottymap, pottyoneMarker);
+            });
+//========================================================
+// the location of the user
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var yourposition = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+        var marker = new google.maps.Marker({
+            position: yourposition,
+            map: pottymap,
+            animation: google.maps.Animation.BOUNCE
+          });
+
+            infoWindow.setPosition(yourposition);
+            infoWindow.setContent("<h6>Welcome to Potty Check! <br> You are here!</h6>");
+            pottymap.setCenter(yourposition);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+
     // });
