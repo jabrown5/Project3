@@ -62,7 +62,7 @@ angular.module('pottyCheck', [
             })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
-                controller: 'HomeCtrl'
+                // controller: 'HomeCtrl'
             })
             .when('/register', {
                 templateUrl: 'ngViews/register.html',
@@ -89,7 +89,7 @@ angular.module('pottyCheck', [
             //     controller: 'DeletePostCtrl'
             // });
 
-        $routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({ redirectTo: '/home' });
     }
 ]);
 
@@ -158,13 +158,13 @@ window.onload = function initFirstMap(){
         {
               locationName: "chicagoMap",
               geolocation: {lat: 41.88425, lng: -87.63245},
-              comments: "<h3>Chicago</h3>"
+              comments: "<h5>Chicago</h5>"
         },
 
         {
               locationName: "greektown",
               geolocation: {lat: 41.8786, lng: -87.6471},
-              comments: "<h3>Greektown</h3>"
+              comments: "<h5>Greektown</h5>"
         },
         {
               locationName: "goldcoast",
@@ -179,53 +179,53 @@ window.onload = function initFirstMap(){
         {
               locationName: "printersrow",
               geolocation: {lat:41.8783, lng: -87.6273},
-              comments: "<h3>Printer's Row</h3>"
+              comments: "<h5>Printer's Row</h5>"
         },
 
           {
               locationName: "rivernorth",
               geolocation: {lat: 41.8924, lng: -87.6341},
-              comments: "<h3>River North</h3>"
+              comments: "<h5>River North</h5>"
           },
          {
               locationName: "wrigleyville",
               geolocation: {lat:41.948437, lng: -87.655334},
-              comments: "<h3>Wrigleyville</h3>"
+              comments: "<h5>Wrigleyville</h5>"
          },
         {
               locationName: "wickerpark",
               geolocation: {lat:41.9088, lng: -87.6796},
-              comments: "<h3>Wicker Park</h3>"
+              comments: "<h5>Wicker Park</h5>"
         },
         {
               locationName: "oldtown",
               geolocation: {lat:41.9077, lng: -87.6374},
-              comments: "<h3>Old Town</h3>"
+              comments: "<h5>Old Town</h5>"
         },
         {
               locationName: "westloop",
               geolocation: {lat:41.8825, lng: -87.6447},
-              comments: "<h3>West Loop</h3>"
+              comments: "<h5>West Loop</h5>"
         },
         {
               locationName: "magmile",
               geolocation: {lat:41.8948, lng: -87.6242},
-              comments: "<h3>Mag Mile</h3>"
+              comments: "<h5>Mag Mile</h5>"
         },
         {
               locationName: "lincolnpark",
               geolocation: {lat:41.9214, lng: -87.6513},
-              comments: "<h3>Lincoln Park</h3>"
+              comments: "<h5>Lincoln Park</h5>"
         },
         {
               locationName: "lakeview",
               geolocation: {lat:41.9436, lng: -87.6584},
-              comments: "<h3>Lakeview</h3>"
+              comments: "<h5>Lakeview</h5>"
         },
         {
               locationName: "loop",
               geolocation: {lat: 41.8837, lng: -87.6289},
-              comments: "<h3>Loop</h3>"
+              comments: "<h5>Loop</h5>"
         }
 
       ];

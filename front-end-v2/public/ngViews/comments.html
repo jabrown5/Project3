@@ -1,15 +1,7 @@
 
-<h4 class="header center orange-text">Your Comments Form</h4>
-<!-- <style type="text/css">
-    .container {
-        width: 900px;
-        clear: both;
-    }
-    .container input {
-        width: 100%;
-        clear: both;
-    }
-</style> -->
+<!-- <h4 class="header center orange-text">Your Comments Form</h4>
+ -->
+<h1 class="header center orange-text" style="font-size:2.5rem; height: 40px;">Your Comments Form</h1>
 
 <h5 class="header center grey-text">{{message}}</h5>
 
@@ -17,104 +9,57 @@
 <div class="container" id="comments">
 
     <form ng-submit="createComment(publicly_accessible, cleanliness, family_friendly, gender, pictures, comment, user_submission, date, tags, restroom_id, api_key)">
-        <div class="row">
 
-<!--     <div class="input-field col s12">
-        <select type="text" ng-model="publicly_accessible">
-          <option for="publicaccessibility" disabled selected>Is This Publicly Accessible?</label>
-          <option value="Yes">yes</option>
-          <option value="No">no</option>
-        </select>
-    </div> -->
+    <div class="row">
 
 <!-- HELP FROM:  https://github.com/Dogfalo/materialize/issues/706
- --><div class="input-field col s12 grey-text text-lighten-1">
-    <select ng-model="publicly_accessible" >
-        <option value="">Is This Publicly Accessible?</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-</div>
+ -->
+     <div class="input-field col s12 grey-text text-lighten-1">
+        <select ng-model="publicly_accessible" >
+            <option value="">Is This Publicly Accessible?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
 
-<!--     <div class="input-field col s12">
-      <select type="text" ng-model="cleanliness">
-        <option for="cleanliness" disabled selected>How Clean Is It?</label>
-        <option value="1">very dirty</option>
-        <option value="2">somewhat dirty</option>
-        <option value="3">neither clean nor dirty</option>
-        <option value="4">somewhat clean</option>
-        <option value="5">very clean</option>
-      </select>   
-    </div> -->
 
-<div class="input-field col s12  grey-text text-lighten-1">
-    <select ng-model="cleanliness" >
-        <option value="">How Clean Is It?</option>
-        <option value="1">very dirty</option>
-        <option value="2">somewhat dirty</option>
-        <option value="3">neither clean nor dirty</option>
-        <option value="4">somewhat clean</option>
-        <option value="5">very clean</option>   
-    </select>
-</div>
+    <div class="input-field col s12  grey-text text-lighten-1">
+        <select ng-model="cleanliness" >
+            <option value="">How Clean Is It?</option>
+            <option value="1">very dirty</option>
+            <option value="2">somewhat dirty</option>
+            <option value="3">neither clean nor dirty</option>
+            <option value="4">somewhat clean</option>
+            <option value="5">very clean</option>   
+        </select>
+    </div>
 
-<!--     <div class="input-field col s12">   
-      <select type="text" ng-model="family_friendly" required="required">
-        <option for="familyfriendly" disabled selected>Is This Family Friendly?</label>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>   
-    </div> -->
 
-<div class="input-field col s12  grey-text text-lighten-1">
-    <select ng-model="family_friendly">
-        <option value="">Is This Family Friendly?</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-</div>
+    <div class="input-field col s12  grey-text text-lighten-1">
+        <select ng-model="family_friendly">
+            <option value="">Is This Family Friendly?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
 
-<!--     <div class="input-field col s12">      
-        <select type="text" ng-model="gender" required="required">
-        <option for="gender" disabled selected>Is This Gender Specific?</label>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>   
-    </div> -->
-
-<div class="input-field col s12  grey-text text-lighten-1">  
-    <select ng-model="gender" >
-        <option value="">Is This Gender Specific?</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-</div>    
+    <div class="input-field col s12  grey-text text-lighten-1">  
+        <select ng-model="gender" >
+            <option value="">Is This Gender Specific?</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>    
 
     <div class="input-field col s12  grey-text text-lighten-1"> 
         <input for="comment" class="u-full-width" type="text" ng-model="comment" placeholder="Your comments.">
     </div>
 
-
-
-        <!--         <div class="four columns">
-                    <label for="user_submission">Name</label>
-                    <input type="text" ng-model="user_submission" placeholder="Name">
-                </div> -->
-            
-        <!--         <div class="four columns">
-                    <label for="date">The date of your visit.</label>
-                    <input type="text" ng-model="date" placeholder="The date of your visit.">
-                </div> -->
-            
-        <!--         <div class="four columns">
-                    <label for="tags"></label>
-                    <input type="text" ng-model="tags" placeholder="tags">
-                </div> -->
-    
-        <button class="center light-blue lighten-2 waves-effect waves-light btn-large" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+    <button class="center light-blue lighten-2 waves-effect waves-light btn-large" type="submit" name="action">Submit<i class="material-icons right">send</i>
+    </button>
     </div>
 </form>
 
-    <script type="text/javascript">
-    $('select').material_select();
-    </script>
+<script type="text/javascript">
+$('select').material_select();
+</script>

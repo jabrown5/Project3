@@ -1,4 +1,7 @@
-<h3 class="header center orange-text">Post a Review</h3>
+<!-- <h3 class="header center orange-text">Post a Review</h3>
+ -->
+
+ <h1 class="header center orange-text" style="font-size:2.5rem; height: 40px;">Post a Review</h1>
 
 <h5 class="header center grey-text">{{message}}</h5>
 
@@ -14,13 +17,17 @@
   </style>
 
 
-<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)"  style="margin-left: 20rem;margin-right: 20rem;">
+<div class="container" id="comments">
+
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)"  >
+
+  <div class="row">
 
   <div class="grey-text text-lighten-1" id="addressField">
     <input id="autocomplete" type="text" placeholder="ENTER ADDRESS HERE!" onFocus="pottyLocate()" ng-model="address" ng-places-autocomplete ></input>
   </div> 
 
-  <div class="row">
+
 
     <tr >
       <td class="label"><!-- Location address --></td>
@@ -36,7 +43,7 @@
     <tr>
       <td class="label"><!-- Location name --></td>
       <td class="slimField"><input type="hidden" class="field" id="" disabled="true"></input></td>
-      <td class="wideField" ><input class="field" placeholder="Facility Name" id="route"  ng-model="facility_name"></input></td>
+      <td class="wideField grey-text text-lighten-1" ><input class="field" placeholder="Facility Name" id="route"  ng-model="facility_name"></input></td>
     </tr>
 
 
@@ -135,7 +142,7 @@
     </select>
 </div>    
 
-     <div>
+    <div>
       <input type="hidden" ng-model="user_submission">
     </div>
    
@@ -143,8 +150,11 @@
     </button>
 
   </div>
+
+
 </form>
 
+  </div>
 
 <!-- <div id="firstmap"></div>
  -->

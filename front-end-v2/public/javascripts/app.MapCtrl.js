@@ -135,6 +135,18 @@ function initFirstMap2(){
 
         //==================================
 
+        var contentStringTen = "McDonalds<br><em>Many bathrooms but very small</em><br>3/5 rating";
+        var infowindowTen = new google.maps.InfoWindow({
+            content: contentStringTen
+            });
+        var pottytenMarker = new google.maps.Marker({
+            position: {lat: 41.8929336, lng: -87.7015333},
+            map: pottymap,
+            });
+            pottytenMarker.addListener('click', function() {
+            infowindowTen.open(pottymap, pottytenMarker);
+            }); 
+
 
         // the location of the user
         if (navigator.geolocation) {
