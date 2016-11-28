@@ -50,7 +50,11 @@ angular.module('pottyCheck', [
             })
             .when('/map', {
                 templateUrl: 'ngViews/map.html',
-                controller: 'MapCtrl'
+                // controller: 'MapCtrl'
+            })
+            .when('/find', {
+                templateUrl: 'ngViews/find.html',
+                // controller: 'MapCtrl'
             })
             .when('/home', {
                 templateUrl: 'ngViews/home.html',
@@ -72,10 +76,10 @@ angular.module('pottyCheck', [
                 templateUrl: 'ngViews/comments.html',
                 controller: 'CommentsCtrl'
             })
-            .when('/find', {
-                templateUrl: 'ngViews/find.html',
-                controller: 'FindCtrl'
-            });
+            // .when('/find', {
+            //     templateUrl: 'ngViews/find.html',
+            //     controller: 'FindCtrl'
+            // });
             // .when('/admin', {
             //     templateUrl: 'ngViews/admin.html',
             //     controller: 'DeletePostCtrl'

@@ -1,261 +1,172 @@
-angular.module('pottyCheck')
-    .controller('MapCtrl', function($scope, $http, $rootScope) {
+// angular.module('pottyCheck')
+//     .controller('MapCtrl', function($scope, $http, $rootScope) {
 
-//one marker with info window and you are here info window
-// window.onload = function initFirstMap(){
-// $scope.initFirstMap = function(){
-
-//         var pottymap = new google.maps.Map(document.getElementById('firstmap'), {
-//           center: {lat: -34.397, lng: 150.644},
-//           zoom: 16
-//         });
-//         var infoWindow = new google.maps.InfoWindow({
-//           map: pottymap,
-//           maxWidth: 200
-//         });
+//geolocation marker with surrounding markers and infoWindow 
+function initFirstMap2(){
+        var pottymap = new google.maps.Map(document.getElementById('firstmap'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 16
+        });
 
 
-//         // var marker = new google.maps.Marker({
-//         //  position: yourposition,
-//         //  map: pottymap
-//         // });
-
-//         // the location of the user
-//         if (navigator.geolocation) {
-//           navigator.geolocation.getCurrentPosition(function(position) {
-//             var yourposition = {
-//               lat: position.coords.latitude,
-//               lng: position.coords.longitude
-//             };
-
-//             var marker = new google.maps.Marker({
-//             position: yourposition,
-//             map: pottymap
-//           });
-
-//             infoWindow.setPosition(yourposition);
-//             infoWindow.setContent("Welcome to Potty Check! You are here!");
-//             pottymap.setCenter(yourposition);
-//           }, function() {
-//             handleLocationError(true, infoWindow, map.getCenter());
-//           });
-//         } else {
-//           handleLocationError(false, infoWindow, map.getCenter());
-//         }
-//       }
-//       //code taken from https://developers.google.com/maps/documentation/javascript/geolocation
-//       // function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-//       $scope.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {
-
-//         infoWindow.setPosition(pos);
-//         infoWindow.setContent(browserHasGeolocation ?
-//                               'Error: The Geolocation service failed.' :
-//                               'Error: Your browser doesn\'t support geolocation.');
-//       }
+        var infoWindow = new google.maps.InfoWindow({
+          map: pottymap,
+          maxWidth: 200
+        });
 
 
+         //=========Potty Markers========
 
-// //multiple markers
-// //for this to work you need this script in the layout.hbs
-// //<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIpSrdHM9RhwhUMEXaUeU7K9Y-xVRjrxI&callback=initAutocomplete&libraries=places" defer></script>
+        //var image = "icon.jpg";
+        //var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'; 
 
+        var contentStringOne = "Trump Tower<br><em>This bathroom is terrible</em><br>1/5 rating";
+        var infowindowOne = new google.maps.InfoWindow({
+            content: contentStringOne
+            });
+        var pottyoneMarker = new google.maps.Marker({
+            position: {lat: 41.889354, lng: -87.625114409},
+            map: pottymap,
+            title: "Bathroom One"
+            //icon: image
+            });
+            pottyoneMarker.addListener('click', function() {
+            infowindowOne.open(pottymap, pottyoneMarker);
+            });
 
-//    // window.onload = function initMap(){
-//    $scope.initMap = function(){
+        //====================
+        var contentStringTwo = "Jewel Osco<br>State Street<br><em>Small but clean</em><br>3/5 rating";
+        var infowindowTwo = new google.maps.InfoWindow({
+            content: contentStringTwo
+            });
+        var pottytwoMarker = new google.maps.Marker({
+            position: {lat: 41.89232, lng: -87.6282730},
+            map: pottymap,
+            title: "Bathroom Two"
+            });
+            pottytwoMarker.addListener('click', function() {
+            infowindowTwo.open(pottymap, pottytwoMarker);
+            });
+        //====================
+        var contentStringThree = "Millenium Park<br>Michigan Ave<br><em>Lots of bathrooms in the pavillion and park</em><br>4/5 rating";
+        var infowindowThree = new google.maps.InfoWindow({
+            content: contentStringThree
+            });
+        var pottythreeMarker = new google.maps.Marker({
+            position: {lat: 41.8834, lng: -87.62246},
+            map: pottymap,
+            });
+            pottythreeMarker.addListener('click', function() {
+            infowindowThree.open(pottymap, pottythreeMarker);
+            });
+        //====================
+        var contentStringFour = "Shedd Aquarium<br><br>4/5 rating";
+        var infowindowFour = new google.maps.InfoWindow({
+            content: contentStringFour
+            });
+        var pottyfourMarker = new google.maps.Marker({
+            position: {lat: 41.86948, lng: -87.61874},
+            map: pottymap,
+            });
+            pottyfourMarker.addListener('click', function() {
+            infowindowFour.open(pottymap, pottyfourMarker);
+            });
+        //====================
+        var contentStringFive = "Chicago Lakefront<br><em>Bathrooms along the lakefront at each 1/2 mile...use at your own risk</em><br>4/5 rating";
+        var infowindowFive = new google.maps.InfoWindow({
+            content: contentStringFive
+            });
+        var pottyfiveMarker = new google.maps.Marker({
+            position: {lat: 41.910635, lng: -87.626273},
+            map: pottymap,
+            });
+            pottyfiveMarker.addListener('click', function() {
+            infowindowFive.open(pottymap, pottyfiveMarker);
+            });
+        //====================
+        var contentStringSix = "Trader Joe's on Ontario<br><em>2 unisex bathrooms</em><br>4/5 rating";
+        var infowindowSix = new google.maps.InfoWindow({
+            content: contentStringSix
+            });
+        var pottysixMarker = new google.maps.Marker({
+            position: {lat: 41.893405914066, lng: -87.6261901855469},
+            map: pottymap,
+            });
+            pottysixMarker.addListener('click', function() {
+            infowindowSix.open(pottymap, pottysixMarker);
+            });
+        //====================
+        var contentStringSeven = "Nordstrom<br><em>bathrooms on each floor in the back, very clean</em><br>5/5 rating";
+        var infowindowSeven = new google.maps.InfoWindow({
+            content: contentStringSeven
+            });
+        var pottysevenMarker = new google.maps.Marker({
+            position: {lat: 41.8912963867188, lng: -87.6260299682617},
+            map: pottymap,
+            });
+            pottysevenMarker.addListener('click', function() {
+            infowindowSeven.open(pottymap, pottysevenMarker);
+            });
 
-//       var locationsArray = [
+        //====================
+        var contentStringEight = "Hotel Palamar<br><em>Two Stalls (One Handicap-Accessible), Three Urinals</em><br>5/5 rating";
+        var infowindowEight = new google.maps.InfoWindow({
+            content: contentStringEight
+            });
+        var pottyeightMarker = new google.maps.Marker({
+            position: {lat: 41.891170812901, lng: -87.627885724912},
+            map: pottymap,
+            });
+            pottyeightMarker.addListener('click', function() {
+            infowindowEight.open(pottymap, pottyeightMarker);
+            });
+        //====================    
+        var contentStringNine = "Hotel James<br><em>Three Stalls (One Handicap-Accessible), Two Urinals</em><br>5/5 rating";
+        var infowindowNine = new google.maps.InfoWindow({
+            content: contentStringNine
+            });
+        var pottynineMarker = new google.maps.Marker({
+            position: {lat: 41.893324063426, lng: -87.625764943978},
+            map: pottymap,
+            });
+            pottynineMarker.addListener('click', function() {
+            infowindowNine.open(pottymap, pottynineMarker);
+            });      
 
-//         {
-//               locationName: "chicagoMap",
-//               geolocation: {lat: 41.88425, lng: -87.63245},
-//               comments: "<h3>Chicago</h3>"
-//         },
-
-//         {
-//               locationName: "greektown",
-//               geolocation: {lat: 41.8786, lng: -87.6471},
-//               comments: "<h3>Greektown</h3>"
-//         },
-//         {
-//               locationName: "goldcoast",
-//               geolocation: {lat: 41.9058, lng: -87.6273},
-//               comments: "<h5>Goldcoast</h5>"
-//         },
-//         {
-//               locationName: "hydepark",
-//               geolocation: {lat: 41.7943, lng: -87.5907},
-//               comments: "<h5>Hyde Park</h5>"
-//         },
-//         {
-//               locationName: "printersrow",
-//               geolocation: {lat:41.8783, lng: -87.6273},
-//               comments: "<h3>Printer's Row</h3>"
-//         },
-
-//           {
-//               locationName: "rivernorth",
-//               geolocation: {lat: 41.8924, lng: -87.6341},
-//               comments: "<h3>River North</h3>"
-//           },
-//          {
-//               locationName: "wrigleyville",
-//               geolocation: {lat:41.948437, lng: -87.655334},
-//               comments: "<h3>Wrigleyville</h3>"
-//          },
-//         {
-//               locationName: "wickerpark",
-//               geolocation: {lat:41.9088, lng: -87.6796},
-//               comments: "<h3>Wicker Park</h3>"
-//         },
-//         {
-//               locationName: "oldtown",
-//               geolocation: {lat:41.9077, lng: -87.6374},
-//               comments: "<h3>Old Town</h3>"
-//         },
-//         {
-//               locationName: "westloop",
-//               geolocation: {lat:41.8825, lng: -87.6447},
-//               comments: "<h3>West Loop</h3>"
-//         },
-//         {
-//               locationName: "magmile",
-//               geolocation: {lat:41.8948, lng: -87.6242},
-//               comments: "<h3>Mag Mile</h3>"
-//         },
-//         {
-//               locationName: "lincolnpark",
-//               geolocation: {lat:41.9214, lng: -87.6513},
-//               comments: "<h3>Lincoln Park</h3>"
-//         },
-//         {
-//               locationName: "lakeview",
-//               geolocation: {lat:41.9436, lng: -87.6584},
-//               comments: "<h3>Lakeview</h3>"
-//         },
-//         {
-//               locationName: "loop",
-//               geolocation: {lat: 41.8837, lng: -87.6289},
-//               comments: "<h3>Loop</h3>"
-//         }
-
-//       ];
-
-//        pottyLocate(locationsArray)
-
-//    };
-        
-
-
-// // ============FORM AUTOCOMPLETE===============-->
-//       var autocomplete;
-//       var pottySearch;
-//       var componentForm = {
-//         street_number: 'short_name',
-//         route: 'long_name',
-//         locality: 'long_name',
-//         postal_code: 'short_name'
-//       };
-
-//       // function initAutocomplete() {
-//       $scope.initAutocomplete = function() {
-//         autocomplete = new google.maps.places.Autocomplete(
-//             /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-//             {types: ['geocode']});
-//         autocomplete.addListener('place_changed', fillInAddress);
-//       }
-
-
-
-//       //getting info from autocomplete
-//       // function fillInAddress() {
-//       $scope.fillInAddress = function() {
-
-//         var place = autocomplete.getPlace();
-
-//         for (var component in componentForm) {
-//           document.getElementById(component).value = '';
-//           document.getElementById(component).disabled = false;
-//         }
-
-//         for (var i = 0; i < place.address_components.length; i++) {
-//           var addressType = place.address_components[i].types[0];
-//           //code from https://google-developers.appspot.com/maps/documentation/javascript/examples/full/places-autocomplete-addressform
-//           if (componentForm[addressType]) {
-//             var val = place.address_components[i][componentForm[addressType]];
-//             document.getElementById(addressType).value = val;
-
-//             console.log(place.geometry.location.lat(), 'lat', place.geometry.location.lng(), 'long')
-//             console.log(val, 'val')
-//             //var theLat  = place.geometry.location.lat(),
-//             //var theLong = place.geometry.location.lat()
-//           }
-//         }
-//       } 
-
-        
-// // ===================END OF AUTOCOMPLETE====================================
+        //==================================
 
 
+        // the location of the user
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var yourposition = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
-//       // function pottyLocate(locationsArray) {
-//       $scope.pottyLocate = function(locationsArray) {
+        var marker = new google.maps.Marker({
+            position: yourposition,
+            map: pottymap,
+            animation: google.maps.Animation.BOUNCE
+          });
+
+            infoWindow.setPosition(yourposition);
+            infoWindow.setContent("<h6>Welcome to Potty Check! <br> You are here!</h6>");
+            pottymap.setCenter(yourposition);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+      //code taken from https://developers.google.com/maps/documentation/javascript/geolocation
+      // function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      //   infoWindow.setPosition(pos);
+      //   infoWindow.setContent(browserHasGeolocation ?
+      //                         'Error: The Geolocation service failed.' :
+      //                         'Error: Your browser doesn\'t support geolocation.');
+      // }
 
 
-//           if (!navigator.geolocation) {
-//           } else navigator.geolocation.getCurrentPosition(function (position) {
-              
-//               var geolocation = {
-//                   lat: position.coords.latitude,
-//                   lng: position.coords.longitude,
-//                   //zoom: 5
-//               };
-//               console.log(geolocation)
-//               var circle = new google.maps.Circle({
-//                   center: geolocation,
-//                   radius: position.coords.accuracy
-//               });
-//               autocomplete.setBounds(circle.getBounds());
-
-//               var pottymap = new google.maps.Map(document.getElementById('secondmap'),
-//                   {
-//                       //center: {lat: 41.88425, lng: -87.63245},
-//                       center: geolocation,
-//                       zoom: 12
-//                       //zoom: 30
-//                       });
-                
-//               for (i = 0; i < locationsArray.length; i++) {
-//                   var locations = locationsArray[i].geolocation; //this might not be right
-                   
-//                   var marker = new google.maps.Marker({
-//                       position: locations,
-//                       animation: google.maps.Animation.BOUNCE, //bounce animation
-//                       //animation: google.maps.Animation.DROP,
-//                       //icon: "icon.jpg",
-//                       map: pottymap
-//                     })
-
-//                    var infowindow = new google.maps.InfoWindow ({ 
-//                         maxWidth:200,
-//                        //pixelOffset: new google.maps.Size(200,200),
-//                        content: locationsArray[i].comments
-//                    });
-
-//                    add(marker, infowindow, pottymap, infowindow.content)
-             
-//               }
-//           })
-
-// }
-
-// // function add(marker, infoWindow, map, comments){
-// $scope.add =function(marker, infoWindow, map, comments){
-//          marker.addListener('click', function(){
-//                       console.log()
-//                        infoWindow.setContent(comments);
-//                        infoWindow.open(map, marker);
-//                    });
-//  }   
-
-    });
-
+    // });

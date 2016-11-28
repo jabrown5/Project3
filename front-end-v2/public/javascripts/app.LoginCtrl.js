@@ -43,37 +43,13 @@ angular.module('pottyCheck')
 
         // LOGOUT NEEDS WORK - - - - - - - - - - - - - - - - - - - - - - - -
         $scope.logOutAccount = function(username, email, password) {
-            $http({
-                url: 'http://localhost:9292/api/account/logout',
-                method: 'get',
-                params: {
-                    username: username, 
-                    password: password,
-                }
-            }).success(function (results) {
-                // if (results.status) {
-                if (results.status == 403) {
-                    //problem, check for 403
-                    $scope.message = results.message; // RENDERS MESSAGE INDICATING INCORRECT LOGIN CREDENTIALS
-                    // console.log(results)
-                    // console.log($rootScope.api_key)
-                } else {
-                    $scope.message = results.message;
 
-                    // console.log($rootScope.api_key)
-                    console.log(results)
-                    // console.log($rootScope.api_key)
-                    //$scope.goToHome();
-                    return ($rootScope.api_key, $rootScope.user_submission);
+            $rootScope.api_key = '' ;
+            $rootScope.username = '' ;
 
-                }
-            }).error(function (err) {
-                console.log('ERROR -- ERROR -- failed to logout user.');
-                console.log(err);
-            });
+            return ($rootScope.api_key, $rootScope.user_submission);
+
         };
         // LOGOUT NEEDS WORK - - - - - - - - - - - - - - - - - - - - - - - -
-
-
 
     });
