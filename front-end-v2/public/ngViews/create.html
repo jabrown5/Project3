@@ -5,16 +5,18 @@
   <style>
           #firstmap,
           #secondmap {
-              width: 100%;
+              width: 90%;
               height: 400px;
-              background-color: transparent;
+              background-color: lightblue;
+              position: fixed;
+              left: 5%;
           }
   </style>
 
 
-<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)">
+<form ng-submit="createPost(facility_name, address, publicly_accessible, cleanliness, family_friendly, gender, latitude, longitude, api_key, user_submission)"  style="margin-left: 20rem;margin-right: 20rem;">
 
-  <div id="addressField">
+  <div class="grey-text text-lighten-1" id="addressField">
     <input id="autocomplete" type="text" placeholder="ENTER ADDRESS HERE!" onFocus="pottyLocate()" ng-model="address" ng-places-autocomplete ></input>
   </div> 
 
@@ -71,7 +73,7 @@
       </select>
     </div> -->
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="publicly_accessible" >
         <option value="">Is This Publicly Accessible?</option>
         <option value="Yes">Yes</option>
@@ -90,7 +92,7 @@
       </select>   
     </div> -->
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="cleanliness" >
         <option value="">How Clean Is It?</option>
         <option value="1">very dirty</option>
@@ -109,7 +111,7 @@
       </select>   
     </div> -->
 
-<div class="input-field col s12">
+<div class="input-field col s12 grey-text text-lighten-1">
     <select ng-model="family_friendly">
         <option value="">Is This Family Friendly?</option>
         <option value="Yes">Yes</option>
@@ -125,7 +127,7 @@
       </select>   
     </div> -->
 
-<div class="input-field col s12">  
+<div class="input-field col s12 grey-text text-lighten-1">  
     <select ng-model="gender" >
         <option value="">Is This Gender Specific?</option>
         <option value="Yes">Yes</option>
