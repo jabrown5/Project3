@@ -277,7 +277,7 @@ window.onload = function initFirstMap(){
             document.getElementById('lng').value = place.geometry.location.lng();
 
 
-            // console.log(place.geometry.location.lat(), 'lat', place.geometry.location.lng(), 'long')
+            console.log(place.geometry.location.lat(), 'lat', place.geometry.location.lng(), 'long')
             // console.log(val, 'val')
             //var theLat  = place.geometry.location.lat(),
             //var theLong = place.geometry.location.lat()
