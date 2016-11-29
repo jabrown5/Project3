@@ -80,10 +80,10 @@ angular.module('pottyCheck', [
                 templateUrl: 'ngViews/comments.html',
                 controller: 'CommentsCtrl'
             })
-            // .when('/find', {
-            //     templateUrl: 'ngViews/find.html',
-            //     controller: 'FindCtrl'
-            // });
+            .when('/list', {
+                templateUrl: 'ngViews/list.hbs',
+                controller: 'FindCtrl'
+            });
             // .when('/admin', {
             //     templateUrl: 'ngViews/admin.html',
             //     controller: 'DeletePostCtrl'
