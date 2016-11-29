@@ -50,9 +50,9 @@ class AccountController < ApplicationController
 
 			@account_message = "Welcome. You've successfully registered and are now logged in."
 			# @username = session[:user][:username]
-			return {:message => @account_message, :api_key => 'catscatscatscats' }.to_json
+			return {:message => @account_message, :api_key => 'catscatscatscats' , :username => @username}.to_json
 
-   			return @model.to_json
+   			# return @model.to_json
 		end
 
 	end

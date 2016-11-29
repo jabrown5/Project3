@@ -15,7 +15,7 @@ angular.module('pottyCheck')
                     password: password }
             }).success(function (results) {
                 console.log(results)
-                $rootScope
+                // $rootScope
 
                 // THIS WILL DISPLAY MESSAGE FROM SERVER SIDE INTO MESSAGE FIELD IN HTML WHEN 
                 // 1) USER ENTERS A USERNAME THAT HAS ALREADY BEEN TAKEN, 2) THEY'VE SUCCESSFULLY REGISTERED A NEW ACCOUNT
@@ -39,10 +39,11 @@ angular.module('pottyCheck')
                     // $rootScope.api_key = results.api_key;
                     // console.log($rootScope.api_key)
                     $rootScope.api_key = results.api_key;
-                    $rootScope.username = results.username;
+                    $rootScope.user_submission = results.username;
                     // console.log($rootScope.api_key)
                     //$scope.goToHome();
-                    return ($rootScope.api_key, $rootScope.username);
+                    console.log(results)
+                    return ($rootScope.api_key, $rootScope.user_submission);
 
                 }
 
